@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="64606DB4-56EF-4F47-9537-14B95FC472A4" name="alumnos_raanariba" schemaObject="0D590821-16ED-4758-B8D3-96BE4CC9E592">
+  <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+  <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+  <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+  <parsed>true</parsed>
+  <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+    <Column name="alumnos_id" id="6B341D62-235A-4B4C-B3D6-E2C7BD66B598">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <dataTypePrecision>12</dataTypePrecision>
+      <ownDataTypeParameters>,12,</ownDataTypeParameters>
+    </Column>
+    <Column name="numero_cuenta" id="4E4B6D3C-4BC1-4678-B501-569E3B6976C7">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <dataTypeSize>30 BYTE</dataTypeSize>
+      <ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+    </Column>
+    <Column name="fecha_ingreso" id="346CD895-81A3-4CBE-A220-48CC7E04B2D7">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT007</logicalDatatype>
+      <ownDataTypeParameters>,,</ownDataTypeParameters>
+    </Column>
+    <Column name="estado" id="2B9F7248-16CC-498F-95E7-A1B56CC7D303">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <dataTypeSize>20 BYTE</dataTypeSize>
+      <ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+    </Column>
+    <Column name="persona_id" id="11302D98-B047-48E4-8654-2F436DE4742C">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <nullsAllowed>false</nullsAllowed>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <dataTypePrecision>12</dataTypePrecision>
+      <ownDataTypeParameters>,12,</ownDataTypeParameters>
+      <associations>
+        <colAssociation fkAssociation="DFE0E268-9462-4A7B-9A5A-9B66CE7B6F65" referredColumn="DFEBE64C-8F0D-4BA9-950D-6FD67CBD89F1" />
+      </associations>
+    </Column>
+  </columns>
+  <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+    <ind_PK_UK id="D1B7FAF8-8683-4E4D-A948-BA75C87DA486" name="alumnos_pk">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <pk>true</pk>
+      <indexState>Primary Constraint</indexState>
+      <indexColumnUsage>
+        <colUsage columnID="6B341D62-235A-4B4C-B3D6-E2C7BD66B598" />
+      </indexColumnUsage>
+    </ind_PK_UK>
+    <ind_PK_UK id="BFA3AF15-5886-4FAA-9425-C30596CF9297" name="alumnos_numero_cuenta_uk">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <indexState>Unique Constraint</indexState>
+      <indexColumnUsage>
+        <colUsage columnID="4E4B6D3C-4BC1-4678-B501-569E3B6976C7" />
+      </indexColumnUsage>
+    </ind_PK_UK>
+    <ind_PK_UK id="80BBAE5C-4D64-4B6B-9F95-0C402C39E635" name="uk_alumnos_2">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <indexState>Unique Constraint</indexState>
+      <indexColumnUsage>
+        <colUsage columnID="11302D98-B047-48E4-8654-2F436DE4742C" />
+      </indexColumnUsage>
+    </ind_PK_UK>
+    <ind_PK_UK id="EDF51A22-BB24-40A1-B641-7C7BEFA27982" name="fk_alumnos_30">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <indexState>Foreign Key</indexState>
+      <indexColumnUsage>
+        <colUsage columnID="11302D98-B047-48E4-8654-2F436DE4742C" />
+      </indexColumnUsage>
+    </ind_PK_UK>
+  </indexes>
+  <comment>Perfil de alumno. Datos personales centralizados en persona. El numero de cuenta es academico; fecha_ingreso conserva el ingreso institucional.</comment>
+</Table>

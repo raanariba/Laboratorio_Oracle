@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="68028308-E9FD-4512-85C3-02ABB700325D" name="permisos_raanariba" schemaObject="0D590821-16ED-4758-B8D3-96BE4CC9E592">
+  <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+  <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+  <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+  <parsed>true</parsed>
+  <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+    <Column name="permisos_id" id="B717ABB4-2703-4A74-B50C-301CF8785FC9">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <dataTypePrecision>12</dataTypePrecision>
+      <ownDataTypeParameters>,12,</ownDataTypeParameters>
+    </Column>
+    <Column name="codigo_permiso" id="4018ED57-C0AE-4C86-AC66-D1ECFDBD09E9">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <dataTypeSize>150 BYTE</dataTypeSize>
+      <ownDataTypeParameters>150 BYTE,,</ownDataTypeParameters>
+    </Column>
+    <Column name="recurso" id="18CED574-AEBD-4E9D-95DD-DC447D7D6E97">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <dataTypeSize>100 BYTE</dataTypeSize>
+      <ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+    </Column>
+    <Column name="accion" id="792F0089-5023-49EC-9D5F-22833EE50F76">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <dataTypeSize>50 BYTE</dataTypeSize>
+      <ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+    </Column>
+  </columns>
+  <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+    <ind_PK_UK id="13E13006-0AE7-4C44-A86A-E9381688B2FD" name="permisos_pk">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <pk>true</pk>
+      <indexState>Primary Constraint</indexState>
+      <indexColumnUsage>
+        <colUsage columnID="B717ABB4-2703-4A74-B50C-301CF8785FC9" />
+      </indexColumnUsage>
+    </ind_PK_UK>
+    <ind_PK_UK id="5A48E14F-3FA9-4EC1-BA69-9BA44EA576FA" name="permisos_codigo_permiso_uk">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <indexState>Unique Constraint</indexState>
+      <indexColumnUsage>
+        <colUsage columnID="4018ED57-C0AE-4C86-AC66-D1ECFDBD09E9" />
+      </indexColumnUsage>
+    </ind_PK_UK>
+  </indexes>
+</Table>

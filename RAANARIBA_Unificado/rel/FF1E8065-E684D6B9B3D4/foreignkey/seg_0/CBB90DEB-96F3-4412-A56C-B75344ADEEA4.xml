@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="CBB90DEB-96F3-4412-A56C-B75344ADEEA4" containerWithKeyObject="7C1EE99A-6B00-458D-A645-7E2896B41515" localFKIndex="331722BD-5CD7-4419-95C6-5F94946BACB1" name="fk_docentes_secci_39">
+  <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+  <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+  <referredTableLongName>RAANARIBA.docentes_raanariba</referredTableLongName>
+  <deleteRule>NO ACTION</deleteRule>
+  <referredTableID>4145085C-DA85-4C78-9C84-B1411989D1B4</referredTableID>
+  <keyObject>50D444C9-F379-4576-81B9-F5F06793AE78</keyObject>
+  <referredKeyID>50D444C9-F379-4576-81B9-F5F06793AE78</referredKeyID>
+  <mandatory>true</mandatory>
+  <refColNames>docentes_id</refColNames>
+  <transferable>true</transferable>
+  <rely>false</rely>
+  <columnDependencyConstraintGenerateInDDL>false</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="91EF9648-735B-4F3E-9FC0-6C9BED79EF6B" name="indicadores_estadisticos_raanariba" schemaObject="0D590821-16ED-4758-B8D3-96BE4CC9E592">
+  <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+  <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+  <parsed>true</parsed>
+  <comment>Catalogo de metricas y su regla de agregacion. Ejemplos: matriculados, docentes asignados y porcentaje de ocupacion. Porcentajes deben calcularse desde sus bases, no sumarse.</comment>
+  <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+    <Column name="indicadores_estadisticos_id" id="BAAF0C4B-94B2-4BF9-B91F-50CE47438595">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <nullsAllowed>false</nullsAllowed>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <dataTypePrecision>12</dataTypePrecision>
+      <ownDataTypeParameters>,12,</ownDataTypeParameters>
+    </Column>
+    <Column name="codigo_indicador" id="868DEBFC-2047-4A73-90A8-ECE73CF01BE7">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <nullsAllowed>false</nullsAllowed>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <dataTypeSize>50 BYTE</dataTypeSize>
+      <ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+    </Column>
+    <Column name="nombre_indicador" id="65300B99-79BB-4EEB-8DCB-2E67C7DB2937">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <nullsAllowed>false</nullsAllowed>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <dataTypeSize>200 BYTE</dataTypeSize>
+      <ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+    </Column>
+    <Column name="descripcion" id="DD164AF4-EB32-42D8-8D5E-CFA8A633A561">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <nullsAllowed>false</nullsAllowed>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <dataTypeSize>1000 BYTE</dataTypeSize>
+      <ownDataTypeParameters>1000 BYTE,,</ownDataTypeParameters>
+    </Column>
+    <Column name="unidad_medida" id="CDFE7708-4895-420E-ACDF-220B5C281E54">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <nullsAllowed>false</nullsAllowed>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <dataTypeSize>30 BYTE</dataTypeSize>
+      <ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+    </Column>
+    <Column name="regla_calculo" id="B14077A6-967B-4ECD-A2FF-6A3F208AD94C">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <nullsAllowed>false</nullsAllowed>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <dataTypeSize>1000 BYTE</dataTypeSize>
+      <ownDataTypeParameters>1000 BYTE,,</ownDataTypeParameters>
+    </Column>
+    <Column name="estado" id="8D60AB07-E42E-45DA-8F64-C4ACAE372849">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <nullsAllowed>false</nullsAllowed>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <dataTypeSize>20 BYTE</dataTypeSize>
+      <ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+    </Column>
+  </columns>
+  <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+    <ind_PK_UK id="30A4AA0E-1E55-454F-8936-A18C3DED78D7" name="pk_indicadores_estad_0">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <indexState>Primary Constraint</indexState>
+      <pk>true</pk>
+      <indexColumnUsage>
+        <colUsage columnID="BAAF0C4B-94B2-4BF9-B91F-50CE47438595" />
+      </indexColumnUsage>
+    </ind_PK_UK>
+    <ind_PK_UK id="A0704D10-A858-45F8-90B0-1C7AD1E1EDF9" name="uk_indicadores_estad_1">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <indexState>Unique Constraint</indexState>
+      <indexColumnUsage>
+        <colUsage columnID="868DEBFC-2047-4A73-90A8-ECE73CF01BE7" />
+      </indexColumnUsage>
+    </ind_PK_UK>
+  </indexes>
+</Table>

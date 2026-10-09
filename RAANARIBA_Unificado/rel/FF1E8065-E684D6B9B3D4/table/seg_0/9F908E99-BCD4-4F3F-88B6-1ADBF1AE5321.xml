@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9F908E99-BCD4-4F3F-88B6-1ADBF1AE5321" name="persona_roles_academicos_raanariba" schemaObject="0D590821-16ED-4758-B8D3-96BE4CC9E592">
+  <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+  <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+  <parsed>true</parsed>
+  <comment>N:M persona-rol academico. La creacion de perfiles alumno/docente debe verificar el rol academico correspondiente.</comment>
+  <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+    <Column name="persona_roles_academicos_id" id="54E0340E-A2B6-4F87-A915-77AA746F629B">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <nullsAllowed>false</nullsAllowed>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <dataTypePrecision>12</dataTypePrecision>
+      <ownDataTypeParameters>,12,</ownDataTypeParameters>
+    </Column>
+    <Column name="persona_id" id="8C54C7DD-32E1-4667-8BF4-7873F058AE49">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <nullsAllowed>false</nullsAllowed>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <dataTypePrecision>12</dataTypePrecision>
+      <ownDataTypeParameters>,12,</ownDataTypeParameters>
+      <associations>
+        <colAssociation fkAssociation="D9F786AE-71B1-470E-ACD4-057BB5B1D94B" referredColumn="DFEBE64C-8F0D-4BA9-950D-6FD67CBD89F1" />
+      </associations>
+    </Column>
+    <Column name="roles_academicos_id" id="DE7AC777-314E-460A-B280-33B48BFB8279">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <nullsAllowed>false</nullsAllowed>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <dataTypePrecision>12</dataTypePrecision>
+      <ownDataTypeParameters>,12,</ownDataTypeParameters>
+      <associations>
+        <colAssociation fkAssociation="39799EED-972F-4706-9EF2-E3B5304DFB8F" referredColumn="081E2355-D09A-447C-9D50-318D442CA03F" />
+      </associations>
+    </Column>
+    <Column name="fecha_asignacion" id="CDB15D7C-52F2-48DD-8C2B-46FB60E761C0">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <nullsAllowed>false</nullsAllowed>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT007</logicalDatatype>
+      <ownDataTypeParameters>,,</ownDataTypeParameters>
+    </Column>
+    <Column name="fecha_fin" id="741AE5DB-B8C9-45D3-9335-40D0F37A6FF3">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <nullsAllowed>true</nullsAllowed>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT007</logicalDatatype>
+      <ownDataTypeParameters>,,</ownDataTypeParameters>
+    </Column>
+    <Column name="estado" id="13CB0B04-A639-4671-AB96-2124056A65F8">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <nullsAllowed>false</nullsAllowed>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <dataTypeSize>20 BYTE</dataTypeSize>
+      <ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+    </Column>
+  </columns>
+  <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+    <ind_PK_UK id="86806DA8-4082-41C7-B1CC-8507DAC1DD96" name="pk_persona_roles_aca_0">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <indexState>Primary Constraint</indexState>
+      <pk>true</pk>
+      <indexColumnUsage>
+        <colUsage columnID="54E0340E-A2B6-4F87-A915-77AA746F629B" />
+      </indexColumnUsage>
+    </ind_PK_UK>
+    <ind_PK_UK id="D9EEF0AE-3B0D-49C8-A275-6394343E3BAD" name="uk_persona_roles_aca_1">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <indexState>Unique Constraint</indexState>
+      <indexColumnUsage>
+        <colUsage columnID="8C54C7DD-32E1-4667-8BF4-7873F058AE49" />
+        <colUsage columnID="DE7AC777-314E-460A-B280-33B48BFB8279" />
+      </indexColumnUsage>
+    </ind_PK_UK>
+    <ind_PK_UK id="F715C225-3072-4909-A120-52A9E8B628C8" name="fk_persona_roles__31">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <indexState>Foreign Key</indexState>
+      <indexColumnUsage>
+        <colUsage columnID="8C54C7DD-32E1-4667-8BF4-7873F058AE49" />
+      </indexColumnUsage>
+    </ind_PK_UK>
+    <ind_PK_UK id="F31F505F-1F0E-4031-99D5-21F025F1F6F6" name="fk_persona_roles__32">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <indexState>Foreign Key</indexState>
+      <indexColumnUsage>
+        <colUsage columnID="DE7AC777-314E-460A-B280-33B48BFB8279" />
+      </indexColumnUsage>
+    </ind_PK_UK>
+  </indexes>
+</Table>

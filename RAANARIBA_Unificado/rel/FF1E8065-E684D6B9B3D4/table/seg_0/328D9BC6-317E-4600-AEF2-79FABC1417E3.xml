@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="328D9BC6-317E-4600-AEF2-79FABC1417E3" name="matriculas_raanariba" schemaObject="0D590821-16ED-4758-B8D3-96BE4CC9E592">
+  <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+  <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+  <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+  <parsed>true</parsed>
+  <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+    <Column name="matriculas_id" id="4E11184B-E728-4E3C-93E9-EE668B13F7D4">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <dataTypePrecision>12</dataTypePrecision>
+      <ownDataTypeParameters>,12,</ownDataTypeParameters>
+    </Column>
+    <Column name="secciones_id" id="FDC90CF7-0770-4851-87B3-88D2391D219E">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <dataTypePrecision>12</dataTypePrecision>
+      <ownDataTypeParameters>,12,</ownDataTypeParameters>
+      <associations>
+        <colAssociation fkAssociation="A78A5F17-8E50-4B06-9FE5-6B7505A9911A" referredColumn="47F1A6C3-029F-4393-B395-2032EAAAFF34" />
+      </associations>
+    </Column>
+    <Column name="fecha_matricula" id="BF68B313-C84B-4AE8-B72C-F6FF184E517D">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>0</use>
+      <ownDataTypeParameters>,,</ownDataTypeParameters>
+      <comment>Tipo requerido: TIMESTAMP(6) WITH TIME ZONE; pendiente de asignacion nativa porque no existe muestra de este tipo en example.zip.</comment>
+    </Column>
+    <Column name="estado_matricula" id="D4C0E7B1-C4EA-44B2-BF7F-8A859786EE7C">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <dataTypeSize>20 BYTE</dataTypeSize>
+      <ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+    </Column>
+    <Column name="alumnos_mallas_id" id="D8B33012-613D-4E8A-9BA0-7E7D5BBE5DD4">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <nullsAllowed>false</nullsAllowed>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <dataTypePrecision>12</dataTypePrecision>
+      <ownDataTypeParameters>,12,</ownDataTypeParameters>
+      <associations>
+        <colAssociation fkAssociation="D8BC023D-563B-4F7C-B165-CEAEF0EBBC65" referredColumn="B30A34EF-BFF7-47BB-ABFA-A5AC0D5E9C0F" />
+      </associations>
+    </Column>
+    <Column name="mallas_asignaturas_id" id="9D9F0BAC-F724-445A-9102-98C52E9AE8F6">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <nullsAllowed>false</nullsAllowed>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <dataTypePrecision>12</dataTypePrecision>
+      <ownDataTypeParameters>,12,</ownDataTypeParameters>
+      <associations>
+        <colAssociation fkAssociation="E22C74B0-58BF-448A-931B-EEDC7C697521" referredColumn="14839E3B-F0D9-452F-BE4B-FFB79F2BD137" />
+      </associations>
+    </Column>
+    <Column name="cargas_entrada_id" id="A99118D7-19A8-49C9-8118-063251B6BD5E">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <nullsAllowed>true</nullsAllowed>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <dataTypePrecision>12</dataTypePrecision>
+      <ownDataTypeParameters>,12,</ownDataTypeParameters>
+      <associations>
+        <colAssociation fkAssociation="53AAAA7A-D121-4BE3-BF90-421EB0EED39D" referredColumn="78DF61C8-6A87-45BE-90B3-7EA0C8CD043D" />
+      </associations>
+    </Column>
+  </columns>
+  <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+    <ind_PK_UK id="6AB527AC-97ED-4938-972F-027A8264D0FC" name="matriculas_pk">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <pk>true</pk>
+      <indexState>Primary Constraint</indexState>
+      <indexColumnUsage>
+        <colUsage columnID="4E11184B-E728-4E3C-93E9-EE668B13F7D4" />
+      </indexColumnUsage>
+    </ind_PK_UK>
+    <ind_PK_UK id="1AA52D8D-015F-48E7-B319-1DD7EEE94C73" name="fk_matriculas_14">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <indexState>Foreign Key</indexState>
+      <indexColumnUsage>
+        <colUsage columnID="FDC90CF7-0770-4851-87B3-88D2391D219E" />
+      </indexColumnUsage>
+    </ind_PK_UK>
+    <ind_PK_UK id="0673D891-2A7B-48F0-87D1-E0071D4E24FD" name="fk_matriculas_25">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <indexState>Foreign Key</indexState>
+      <indexColumnUsage>
+        <colUsage columnID="D8B33012-613D-4E8A-9BA0-7E7D5BBE5DD4" />
+      </indexColumnUsage>
+    </ind_PK_UK>
+    <ind_PK_UK id="ABED4E8C-1A97-4F75-B6F8-3172DAEA069D" name="fk_matriculas_26">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <indexState>Foreign Key</indexState>
+      <indexColumnUsage>
+        <colUsage columnID="9D9F0BAC-F724-445A-9102-98C52E9AE8F6" />
+      </indexColumnUsage>
+    </ind_PK_UK>
+    <ind_PK_UK id="2DD48D4B-21F2-45A2-8E54-238294409953" name="fk_matriculas_27">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <indexState>Foreign Key</indexState>
+      <indexColumnUsage>
+        <colUsage columnID="A99118D7-19A8-49C9-8118-063251B6BD5E" />
+      </indexColumnUsage>
+    </ind_PK_UK>
+  </indexes>
+  <comment>Validar que alumnos_mallas y mallas_asignaturas pertenecen a la misma malla, y que secciones.asignaturas_id coincide con la asignatura del plan. Una matricula activa por alumno y seccion incluso entre planes. cargas_entrada nullable para captura directa; no contar intentos rechazados como matriculas.</comment>
+</Table>

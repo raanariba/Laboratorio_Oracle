@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="94C92A76-6B1F-43A6-900B-9825DC3A2D75" name="asignaturas_raanariba" schemaObject="0D590821-16ED-4758-B8D3-96BE4CC9E592">
+  <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+  <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+  <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+  <parsed>true</parsed>
+  <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+    <Column name="asignaturas_id" id="0298B6BB-FD8E-4958-BC5C-88F32200C320">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <dataTypePrecision>12</dataTypePrecision>
+      <ownDataTypeParameters>,12,</ownDataTypeParameters>
+    </Column>
+    <Column name="codigo_asignatura" id="8F653AC5-DA45-4FCC-B8D6-685F37BA0BED">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <dataTypeSize>30 BYTE</dataTypeSize>
+      <ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+    </Column>
+    <Column name="nombre_asignatura" id="76784198-BAE0-4E2B-BE09-0E0C94A65544">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <dataTypeSize>150 BYTE</dataTypeSize>
+      <ownDataTypeParameters>150 BYTE,,</ownDataTypeParameters>
+    </Column>
+    <Column name="unidades_valorativas" id="DEAEE49A-B979-468C-84AC-10E0FD179FB2">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <dataTypePrecision>4</dataTypePrecision>
+      <dataTypeScale>1</dataTypeScale>
+      <ownDataTypeParameters>,4,1</ownDataTypeParameters>
+    </Column>
+    <Column name="estado" id="4E35D0B0-E51C-4F99-A9B9-55BCADA2B28C">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <dataTypeSize>20 BYTE</dataTypeSize>
+      <ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+    </Column>
+  </columns>
+  <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+    <ind_PK_UK id="4311B81E-3C9D-4FD6-8102-E7D8970C8568" name="asignaturas_pk">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <pk>true</pk>
+      <indexState>Primary Constraint</indexState>
+      <indexColumnUsage>
+        <colUsage columnID="0298B6BB-FD8E-4958-BC5C-88F32200C320" />
+      </indexColumnUsage>
+    </ind_PK_UK>
+    <ind_PK_UK id="72850FD9-6AB8-44E2-ADF8-4B73C0E8D597" name="asignaturas_codigo_asignatura_uk">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <indexState>Unique Constraint</indexState>
+      <indexColumnUsage>
+        <colUsage columnID="8F653AC5-DA45-4FCC-B8D6-685F37BA0BED" />
+      </indexColumnUsage>
+    </ind_PK_UK>
+  </indexes>
+</Table>

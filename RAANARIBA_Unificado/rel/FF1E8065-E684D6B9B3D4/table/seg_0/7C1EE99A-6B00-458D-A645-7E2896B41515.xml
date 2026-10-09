@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7C1EE99A-6B00-458D-A645-7E2896B41515" name="docentes_secciones_raanariba" schemaObject="0D590821-16ED-4758-B8D3-96BE4CC9E592">
+  <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+  <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+  <parsed>true</parsed>
+  <comment>Asignacion docente N:M a secciones, admite codocencia.</comment>
+  <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+    <Column name="docentes_secciones_id" id="E57FC519-238F-4E42-BB87-5ACD0521FABD">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <nullsAllowed>false</nullsAllowed>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <dataTypePrecision>12</dataTypePrecision>
+      <ownDataTypeParameters>,12,</ownDataTypeParameters>
+    </Column>
+    <Column name="docentes_id" id="C4E1AA3F-7C68-4FAE-A2DB-957DA863256C">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <nullsAllowed>false</nullsAllowed>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <dataTypePrecision>12</dataTypePrecision>
+      <ownDataTypeParameters>,12,</ownDataTypeParameters>
+      <associations>
+        <colAssociation fkAssociation="CBB90DEB-96F3-4412-A56C-B75344ADEEA4" referredColumn="B2868D3E-00A0-4851-944D-E639C7C4B118" />
+      </associations>
+    </Column>
+    <Column name="secciones_id" id="63D7178B-5F14-44DF-B915-D0E268B9731F">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <nullsAllowed>false</nullsAllowed>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <dataTypePrecision>12</dataTypePrecision>
+      <ownDataTypeParameters>,12,</ownDataTypeParameters>
+      <associations>
+        <colAssociation fkAssociation="6D0CDF87-F5CF-4DC0-AEDE-80E02E92D0ED" referredColumn="47F1A6C3-029F-4393-B395-2032EAAAFF34" />
+      </associations>
+    </Column>
+    <Column name="funcion_docente" id="D34B4E19-2766-45A2-B90E-774B6770B4F8">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <nullsAllowed>false</nullsAllowed>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <dataTypeSize>30 BYTE</dataTypeSize>
+      <ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+    </Column>
+    <Column name="fecha_asignacion" id="1F2F690C-A03E-400C-84B8-5AC577D9EE5E">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <nullsAllowed>false</nullsAllowed>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT007</logicalDatatype>
+      <ownDataTypeParameters>,,</ownDataTypeParameters>
+    </Column>
+  </columns>
+  <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+    <ind_PK_UK id="96BE9146-B26F-4D2D-B69F-26D8E29666D9" name="pk_docentes_seccione_0">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <indexState>Primary Constraint</indexState>
+      <pk>true</pk>
+      <indexColumnUsage>
+        <colUsage columnID="E57FC519-238F-4E42-BB87-5ACD0521FABD" />
+      </indexColumnUsage>
+    </ind_PK_UK>
+    <ind_PK_UK id="B869EC0D-A3BF-4029-ABAC-EF9202F81065" name="uk_docentes_seccione_1">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <indexState>Unique Constraint</indexState>
+      <indexColumnUsage>
+        <colUsage columnID="C4E1AA3F-7C68-4FAE-A2DB-957DA863256C" />
+        <colUsage columnID="63D7178B-5F14-44DF-B915-D0E268B9731F" />
+      </indexColumnUsage>
+    </ind_PK_UK>
+    <ind_PK_UK id="331722BD-5CD7-4419-95C6-5F94946BACB1" name="fk_docentes_secci_39">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <indexState>Foreign Key</indexState>
+      <indexColumnUsage>
+        <colUsage columnID="C4E1AA3F-7C68-4FAE-A2DB-957DA863256C" />
+      </indexColumnUsage>
+    </ind_PK_UK>
+    <ind_PK_UK id="6099DBF1-14C8-4718-9A44-B979EA3A3208" name="fk_docentes_secci_40">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <indexState>Foreign Key</indexState>
+      <indexColumnUsage>
+        <colUsage columnID="63D7178B-5F14-44DF-B915-D0E268B9731F" />
+      </indexColumnUsage>
+    </ind_PK_UK>
+  </indexes>
+</Table>

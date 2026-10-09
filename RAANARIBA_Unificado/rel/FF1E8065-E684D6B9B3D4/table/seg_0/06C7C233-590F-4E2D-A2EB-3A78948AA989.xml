@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="06C7C233-590F-4E2D-A2EB-3A78948AA989" name="horarios_raanariba" schemaObject="0D590821-16ED-4758-B8D3-96BE4CC9E592">
+  <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+  <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+  <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+  <parsed>true</parsed>
+  <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+    <Column name="horarios_id" id="262A0DA2-F1C8-4F4D-97C3-8FD4AF2C0E58">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <dataTypePrecision>12</dataTypePrecision>
+      <ownDataTypeParameters>,12,</ownDataTypeParameters>
+    </Column>
+    <Column name="secciones_id" id="EE572DCA-AC2F-4F44-AC8A-3769BF805FA1">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <dataTypePrecision>12</dataTypePrecision>
+      <ownDataTypeParameters>,12,</ownDataTypeParameters>
+      <associations>
+        <colAssociation fkAssociation="D5A15321-1C44-45B2-A75D-CEE0DC6DA205" referredColumn="47F1A6C3-029F-4393-B395-2032EAAAFF34" />
+      </associations>
+    </Column>
+    <Column name="dia_semana" id="0E9E8D3E-F4E9-456C-AD3F-16849E2FE136">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <dataTypePrecision>1</dataTypePrecision>
+      <ownDataTypeParameters>,1,</ownDataTypeParameters>
+    </Column>
+    <Column name="hora_inicio" id="D7CBEB9B-A956-4F94-902A-AA221CD5D6AB">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <dataTypeSize>5 BYTE</dataTypeSize>
+      <ownDataTypeParameters>5 BYTE,,</ownDataTypeParameters>
+    </Column>
+    <Column name="hora_fin" id="6FD4BEC6-5045-4440-96E0-D019B8B822BE">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <dataTypeSize>5 BYTE</dataTypeSize>
+      <ownDataTypeParameters>5 BYTE,,</ownDataTypeParameters>
+    </Column>
+  </columns>
+  <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+    <ind_PK_UK id="40778729-AD5B-4610-8894-6DF5109FA3DA" name="horarios_pk">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <pk>true</pk>
+      <indexState>Primary Constraint</indexState>
+      <indexColumnUsage>
+        <colUsage columnID="262A0DA2-F1C8-4F4D-97C3-8FD4AF2C0E58" />
+      </indexColumnUsage>
+    </ind_PK_UK>
+    <ind_PK_UK id="A6BFE0F4-7797-4779-BC37-EF8F09363226" name="fk_horarios_7">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <indexState>Foreign Key</indexState>
+      <indexColumnUsage>
+        <colUsage columnID="EE572DCA-AC2F-4F44-AC8A-3769BF805FA1" />
+      </indexColumnUsage>
+    </ind_PK_UK>
+  </indexes>
+</Table>

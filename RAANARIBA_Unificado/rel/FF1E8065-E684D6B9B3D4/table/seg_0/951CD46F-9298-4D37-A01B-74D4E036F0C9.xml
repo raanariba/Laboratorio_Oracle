@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="951CD46F-9298-4D37-A01B-74D4E036F0C9" name="reportes_definiciones_raanariba" schemaObject="0D590821-16ED-4758-B8D3-96BE4CC9E592">
+  <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+  <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+  <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+  <parsed>true</parsed>
+  <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+    <Column name="reportes_definiciones_id" id="796A83B3-A61F-4936-B810-183680BC13DA">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <dataTypePrecision>12</dataTypePrecision>
+      <ownDataTypeParameters>,12,</ownDataTypeParameters>
+    </Column>
+    <Column name="codigo_reporte" id="03214D80-4171-45FC-A251-1E7528AD2CDE">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <dataTypeSize>50 BYTE</dataTypeSize>
+      <ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+    </Column>
+    <Column name="nombre_reporte" id="A4C9184F-4790-4310-B248-591EB068C238">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <dataTypeSize>150 BYTE</dataTypeSize>
+      <ownDataTypeParameters>150 BYTE,,</ownDataTypeParameters>
+    </Column>
+    <Column name="descripcion" id="AF5AA63A-7771-4530-8672-028CDD955882">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <dataTypeSize>500 BYTE</dataTypeSize>
+      <ownDataTypeParameters>500 BYTE,,</ownDataTypeParameters>
+    </Column>
+    <Column name="estado" id="E67A271E-6337-49DF-9407-9C27F39EDF65">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <dataTypeSize>20 BYTE</dataTypeSize>
+      <ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+    </Column>
+  </columns>
+  <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+    <ind_PK_UK id="B63C8B8A-16FF-4852-9D06-3C75327A718A" name="reportes_definiciones_pk">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <pk>true</pk>
+      <indexState>Primary Constraint</indexState>
+      <indexColumnUsage>
+        <colUsage columnID="796A83B3-A61F-4936-B810-183680BC13DA" />
+      </indexColumnUsage>
+    </ind_PK_UK>
+    <ind_PK_UK id="4D183A34-EF02-44F9-8001-54FE340989AD" name="reportes_definiciones_codigo_reporte_uk">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <indexState>Unique Constraint</indexState>
+      <indexColumnUsage>
+        <colUsage columnID="03214D80-4171-45FC-A251-1E7528AD2CDE" />
+      </indexColumnUsage>
+    </ind_PK_UK>
+  </indexes>
+  <comment>Catalogo de reportes estadisticos; su contenido se define con reportes_indicadores, y sus resultados numericos en resultados_estadisticos.</comment>
+</Table>

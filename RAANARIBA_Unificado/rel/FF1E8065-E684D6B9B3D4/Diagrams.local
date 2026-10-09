@@ -1,0 +1,4 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="main_view" objectID="F2CF1412-57E6-73D3-8F39-349A2153B04E" name="RAANARIBA - Esquema unificado" visible="true"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

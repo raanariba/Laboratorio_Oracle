@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4145085C-DA85-4C78-9C84-B1411989D1B4" name="docentes_raanariba" schemaObject="0D590821-16ED-4758-B8D3-96BE4CC9E592">
+  <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+  <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+  <parsed>true</parsed>
+  <comment>Perfil profesional docente. Nombre, documentos y contacto se almacenan exclusivamente en persona.</comment>
+  <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+    <Column name="docentes_id" id="B2868D3E-00A0-4851-944D-E639C7C4B118">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <nullsAllowed>false</nullsAllowed>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <dataTypePrecision>12</dataTypePrecision>
+      <ownDataTypeParameters>,12,</ownDataTypeParameters>
+    </Column>
+    <Column name="persona_id" id="38D36ED7-A09A-43AF-AB79-6BCD81A09209">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <nullsAllowed>false</nullsAllowed>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <dataTypePrecision>12</dataTypePrecision>
+      <ownDataTypeParameters>,12,</ownDataTypeParameters>
+      <associations>
+        <colAssociation fkAssociation="98392CEB-9755-4F90-AC20-3EFFDCA0B0AE" referredColumn="DFEBE64C-8F0D-4BA9-950D-6FD67CBD89F1" />
+      </associations>
+    </Column>
+    <Column name="codigo_docente" id="71502222-1873-4B96-B6ED-39AA579E1EF0">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <nullsAllowed>false</nullsAllowed>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <dataTypeSize>30 BYTE</dataTypeSize>
+      <ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+    </Column>
+    <Column name="grado_academico" id="767E6B45-C0F4-4EA8-BBAC-134495128216">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <nullsAllowed>false</nullsAllowed>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <dataTypeSize>100 BYTE</dataTypeSize>
+      <ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+    </Column>
+    <Column name="especialidad" id="C63A24D9-170A-46FE-81B1-439D93680C4B">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <nullsAllowed>false</nullsAllowed>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <dataTypeSize>150 BYTE</dataTypeSize>
+      <ownDataTypeParameters>150 BYTE,,</ownDataTypeParameters>
+    </Column>
+    <Column name="fecha_ingreso" id="A40F97FD-BFF7-4FB1-9219-F1A97BD19B37">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <nullsAllowed>false</nullsAllowed>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT007</logicalDatatype>
+      <ownDataTypeParameters>,,</ownDataTypeParameters>
+    </Column>
+    <Column name="tipo_contratacion" id="3D68DA61-4AC8-4F7B-8ECC-6C1902F9B5BC">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <nullsAllowed>false</nullsAllowed>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <dataTypeSize>50 BYTE</dataTypeSize>
+      <ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+    </Column>
+    <Column name="estado" id="7ACA4586-98C2-45EA-A116-CAE6782B6177">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <nullsAllowed>false</nullsAllowed>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <dataTypeSize>20 BYTE</dataTypeSize>
+      <ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+    </Column>
+  </columns>
+  <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+    <ind_PK_UK id="50D444C9-F379-4576-81B9-F5F06793AE78" name="pk_docentes_0">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <indexState>Primary Constraint</indexState>
+      <pk>true</pk>
+      <indexColumnUsage>
+        <colUsage columnID="B2868D3E-00A0-4851-944D-E639C7C4B118" />
+      </indexColumnUsage>
+    </ind_PK_UK>
+    <ind_PK_UK id="4BECBC86-9E7D-4485-BD5D-3D4FC39D7C95" name="uk_docentes_1">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <indexState>Unique Constraint</indexState>
+      <indexColumnUsage>
+        <colUsage columnID="38D36ED7-A09A-43AF-AB79-6BCD81A09209" />
+      </indexColumnUsage>
+    </ind_PK_UK>
+    <ind_PK_UK id="D9B14356-B1E6-480E-A1D8-6FB3242118BA" name="uk_docentes_2">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <indexState>Unique Constraint</indexState>
+      <indexColumnUsage>
+        <colUsage columnID="71502222-1873-4B96-B6ED-39AA579E1EF0" />
+      </indexColumnUsage>
+    </ind_PK_UK>
+    <ind_PK_UK id="DC078BCB-AE61-45E9-BF80-2E9975C71329" name="fk_docentes_33">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <indexState>Foreign Key</indexState>
+      <indexColumnUsage>
+        <colUsage columnID="38D36ED7-A09A-43AF-AB79-6BCD81A09209" />
+      </indexColumnUsage>
+    </ind_PK_UK>
+  </indexes>
+</Table>

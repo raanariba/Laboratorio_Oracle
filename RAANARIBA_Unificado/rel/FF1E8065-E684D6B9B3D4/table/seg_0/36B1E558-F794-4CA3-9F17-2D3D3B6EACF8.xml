@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="36B1E558-F794-4CA3-9F17-2D3D3B6EACF8" name="carreras_raanariba" schemaObject="0D590821-16ED-4758-B8D3-96BE4CC9E592">
+  <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+  <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+  <parsed>true</parsed>
+  <comment>Programa academico. Una carrera tiene varias versiones de malla curricular.</comment>
+  <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+    <Column name="carreras_id" id="58E603E2-9D4D-4498-B8EE-B1E09CB75BC3">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <nullsAllowed>false</nullsAllowed>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <dataTypePrecision>12</dataTypePrecision>
+      <ownDataTypeParameters>,12,</ownDataTypeParameters>
+    </Column>
+    <Column name="codigo_carrera" id="D3F57F8F-F2D1-4812-A378-73460DC6EEEF">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <nullsAllowed>false</nullsAllowed>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <dataTypeSize>30 BYTE</dataTypeSize>
+      <ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+    </Column>
+    <Column name="nombre_carrera" id="63E8F3FD-5F4E-4B1B-9281-9D1671752B38">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <nullsAllowed>false</nullsAllowed>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <dataTypeSize>200 BYTE</dataTypeSize>
+      <ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+    </Column>
+    <Column name="nivel_academico" id="4CA32B96-E611-4DF7-A45B-DEC35DE7B220">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <nullsAllowed>false</nullsAllowed>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <dataTypeSize>50 BYTE</dataTypeSize>
+      <ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+    </Column>
+    <Column name="titulo_otorgado" id="2FE4F9E8-486E-404D-957B-D090B191EFBD">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <nullsAllowed>false</nullsAllowed>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <dataTypeSize>200 BYTE</dataTypeSize>
+      <ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+    </Column>
+    <Column name="estado" id="5288B613-71F2-4954-9B2E-7106FD6B2780">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <nullsAllowed>false</nullsAllowed>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <dataTypeSize>20 BYTE</dataTypeSize>
+      <ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+    </Column>
+  </columns>
+  <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+    <ind_PK_UK id="2DF2CC65-4F72-4627-8F46-F380E1AF5A41" name="pk_carreras_0">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <indexState>Primary Constraint</indexState>
+      <pk>true</pk>
+      <indexColumnUsage>
+        <colUsage columnID="58E603E2-9D4D-4498-B8EE-B1E09CB75BC3" />
+      </indexColumnUsage>
+    </ind_PK_UK>
+    <ind_PK_UK id="CBB66D40-02B9-466C-9170-B2FE1464F13A" name="uk_carreras_1">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <indexState>Unique Constraint</indexState>
+      <indexColumnUsage>
+        <colUsage columnID="D3F57F8F-F2D1-4812-A378-73460DC6EEEF" />
+      </indexColumnUsage>
+    </ind_PK_UK>
+  </indexes>
+</Table>

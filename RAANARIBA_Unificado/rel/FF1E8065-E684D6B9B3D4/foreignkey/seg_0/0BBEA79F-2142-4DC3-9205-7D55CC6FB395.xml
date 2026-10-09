@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="0BBEA79F-2142-4DC3-9205-7D55CC6FB395" containerWithKeyObject="CE867DB1-D3C6-4B84-8902-E6332A22A917" localFKIndex="223299DB-DE62-4529-BE42-4DBB647309ED" name="fk_reportes_indic_41">
+  <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+  <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+  <referredTableLongName>RAANARIBA.reportes_definiciones_raanariba</referredTableLongName>
+  <deleteRule>NO ACTION</deleteRule>
+  <referredTableID>951CD46F-9298-4D37-A01B-74D4E036F0C9</referredTableID>
+  <keyObject>B63C8B8A-16FF-4852-9D06-3C75327A718A</keyObject>
+  <referredKeyID>B63C8B8A-16FF-4852-9D06-3C75327A718A</referredKeyID>
+  <mandatory>true</mandatory>
+  <refColNames>reportes_definiciones_id</refColNames>
+  <transferable>true</transferable>
+  <rely>false</rely>
+  <columnDependencyConstraintGenerateInDDL>false</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

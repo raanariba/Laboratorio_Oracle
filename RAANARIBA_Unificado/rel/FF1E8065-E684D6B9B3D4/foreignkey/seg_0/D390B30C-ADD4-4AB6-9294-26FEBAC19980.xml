@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D390B30C-ADD4-4AB6-9294-26FEBAC19980" containerWithKeyObject="3E0D2B65-71A9-4527-9314-BD23E8295F41" localFKIndex="C178DF09-58E5-4E1D-BFA6-345EA7C9BC26" name="fk_resultados_est_45">
+  <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+  <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+  <referredTableLongName>RAANARIBA.periodos_academicos_raanariba</referredTableLongName>
+  <deleteRule>NO ACTION</deleteRule>
+  <referredTableID>A3E1D286-5FC1-4FE5-88B2-3B63938A9950</referredTableID>
+  <keyObject>541402A2-6151-4B78-8E6A-1D6C73672E1F</keyObject>
+  <referredKeyID>541402A2-6151-4B78-8E6A-1D6C73672E1F</referredKeyID>
+  <mandatory>true</mandatory>
+  <refColNames>periodos_academicos_id</refColNames>
+  <transferable>true</transferable>
+  <rely>false</rely>
+  <columnDependencyConstraintGenerateInDDL>false</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

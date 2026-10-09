@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3660EEE7-E61C-4517-914F-669A05790B98" name="logs_sistema_raanariba" schemaObject="0D590821-16ED-4758-B8D3-96BE4CC9E592">
+  <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+  <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+  <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+  <parsed>true</parsed>
+  <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+    <Column name="logs_sistema_id" id="B31711D1-1929-4D74-A29F-8EF8C5C1890D">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <dataTypePrecision>12</dataTypePrecision>
+      <ownDataTypeParameters>,12,</ownDataTypeParameters>
+    </Column>
+    <Column name="usuarios_id" id="4E32DD3F-8940-4492-9203-A5ADA6BC8A5B">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <nullsAllowed>true</nullsAllowed>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <dataTypePrecision>12</dataTypePrecision>
+      <ownDataTypeParameters>,12,</ownDataTypeParameters>
+      <associations>
+        <colAssociation fkAssociation="B2687594-2D6C-4B37-BA18-8A3624D0DD93" referredColumn="D1D60D90-DDA4-4A95-A1AC-BA19F8078BB5" />
+      </associations>
+    </Column>
+    <Column name="sesiones_id" id="CDA469D0-2CDA-47D5-99A8-9D3423AC69AE">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <nullsAllowed>true</nullsAllowed>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <dataTypePrecision>12</dataTypePrecision>
+      <ownDataTypeParameters>,12,</ownDataTypeParameters>
+      <associations>
+        <colAssociation fkAssociation="B1429DA7-5F79-448A-92D4-252A5F3EABC0" referredColumn="05BB2187-2905-4992-AED0-288E4E6B65F3" />
+      </associations>
+    </Column>
+    <Column name="nivel" id="5BD08DBF-165B-48DA-8903-9E418A842BC7">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <dataTypeSize>20 BYTE</dataTypeSize>
+      <ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+    </Column>
+    <Column name="servicio" id="B91995B6-BBE7-49C0-8C6D-FF7F511607E9">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <dataTypeSize>100 BYTE</dataTypeSize>
+      <ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+    </Column>
+    <Column name="modulo" id="90369F06-75E6-430C-9B01-CD5A69CA5491">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <dataTypeSize>100 BYTE</dataTypeSize>
+      <ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+    </Column>
+    <Column name="mensaje" id="4B31B69E-0677-4ED3-B16B-D99BF8EFC2BE">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <dataTypeSize>1000 BYTE</dataTypeSize>
+      <ownDataTypeParameters>1000 BYTE,,</ownDataTypeParameters>
+    </Column>
+    <Column name="detalle_tecnico" id="FF2ACDCA-E432-47B3-BA30-3911F41559A0">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>0</use>
+      <ownDataTypeParameters>,,</ownDataTypeParameters>
+      <comment>Tipo requerido: CLOB; pendiente de asignacion nativa porque no existe muestra de este tipo en example.zip.</comment>
+    </Column>
+    <Column name="fecha_evento" id="81B79056-7866-4819-BA70-0C504517D900">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>0</use>
+      <ownDataTypeParameters>,,</ownDataTypeParameters>
+      <comment>Tipo requerido: TIMESTAMP(6) WITH TIME ZONE; pendiente de asignacion nativa porque no existe muestra de este tipo en example.zip.</comment>
+    </Column>
+    <Column name="correlation_id" id="1C231AA4-EDDE-4788-BE55-2D33183E2175">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <dataTypeSize>100 BYTE</dataTypeSize>
+      <ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+    </Column>
+  </columns>
+  <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+    <ind_PK_UK id="14985B65-B378-43F6-8785-5A9E1CFE822A" name="logs_sistema_pk">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <pk>true</pk>
+      <indexState>Primary Constraint</indexState>
+      <indexColumnUsage>
+        <colUsage columnID="B31711D1-1929-4D74-A29F-8EF8C5C1890D" />
+      </indexColumnUsage>
+    </ind_PK_UK>
+    <ind_PK_UK id="E80EB107-6CD2-4534-BC1A-E8DFBC129186" name="fk_logs_sistema_10">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <indexState>Foreign Key</indexState>
+      <indexColumnUsage>
+        <colUsage columnID="CDA469D0-2CDA-47D5-99A8-9D3423AC69AE" />
+      </indexColumnUsage>
+    </ind_PK_UK>
+    <ind_PK_UK id="B1878F2D-53E4-4733-8D3B-A592C6053BDD" name="fk_logs_sistema_23">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <indexState>Foreign Key</indexState>
+      <indexColumnUsage>
+        <colUsage columnID="4E32DD3F-8940-4492-9203-A5ADA6BC8A5B" />
+      </indexColumnUsage>
+    </ind_PK_UK>
+  </indexes>
+</Table>

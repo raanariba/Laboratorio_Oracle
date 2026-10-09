@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="330F8CA6-67ED-4B42-89D1-55D6EDE32A3B" name="usuarios_roles_raanariba" schemaObject="0D590821-16ED-4758-B8D3-96BE4CC9E592">
+  <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+  <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+  <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+  <parsed>true</parsed>
+  <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+    <Column name="usuarios_roles_id" id="C31470FA-2755-4CCA-909C-D2EE9ADED8A4">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <dataTypePrecision>12</dataTypePrecision>
+      <ownDataTypeParameters>,12,</ownDataTypeParameters>
+    </Column>
+    <Column name="usuarios_id" id="AF36E92C-CE41-46F1-BB96-3627F2762987">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <dataTypePrecision>12</dataTypePrecision>
+      <ownDataTypeParameters>,12,</ownDataTypeParameters>
+      <associations>
+        <colAssociation fkAssociation="A8AE3F2D-8FAE-4F96-813A-E7CFDBC454E6" referredColumn="D1D60D90-DDA4-4A95-A1AC-BA19F8078BB5" />
+      </associations>
+    </Column>
+    <Column name="roles_id" id="6E56A2CB-094F-4EFB-B18E-E44DB1595F46">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <dataTypePrecision>12</dataTypePrecision>
+      <ownDataTypeParameters>,12,</ownDataTypeParameters>
+      <associations>
+        <colAssociation fkAssociation="E9CC847B-9517-4B62-8748-D5FB6E6E7C0C" referredColumn="EA2BBB2C-1D39-41B1-9F41-CDCD49068FA5" />
+      </associations>
+    </Column>
+  </columns>
+  <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+    <ind_PK_UK id="E12D14E3-6656-4771-914F-25C8603B56F5" name="usuarios_roles_pk">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <pk>true</pk>
+      <indexState>Primary Constraint</indexState>
+      <indexColumnUsage>
+        <colUsage columnID="C31470FA-2755-4CCA-909C-D2EE9ADED8A4" />
+      </indexColumnUsage>
+    </ind_PK_UK>
+    <ind_PK_UK id="7AA97CED-3671-4631-B1C4-7C065DC25DD2" name="usuarios_roles_uk">
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <indexState>Unique Constraint</indexState>
+      <indexColumnUsage>
+        <colUsage columnID="AF36E92C-CE41-46F1-BB96-3627F2762987" />
+        <colUsage columnID="6E56A2CB-094F-4EFB-B18E-E44DB1595F46" />
+      </indexColumnUsage>
+    </ind_PK_UK>
+    <ind_PK_UK id="F2D83313-6187-4E29-AA2B-1E18E75B5E8F" name="fk_usuarios_roles_16">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <indexState>Foreign Key</indexState>
+      <indexColumnUsage>
+        <colUsage columnID="AF36E92C-CE41-46F1-BB96-3627F2762987" />
+      </indexColumnUsage>
+    </ind_PK_UK>
+    <ind_PK_UK id="626FE087-4CFF-4C86-AB74-8594CCD83F8B" name="fk_usuarios_roles_17">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <indexState>Foreign Key</indexState>
+      <indexColumnUsage>
+        <colUsage columnID="6E56A2CB-094F-4EFB-B18E-E44DB1595F46" />
+      </indexColumnUsage>
+    </ind_PK_UK>
+  </indexes>
+</Table>

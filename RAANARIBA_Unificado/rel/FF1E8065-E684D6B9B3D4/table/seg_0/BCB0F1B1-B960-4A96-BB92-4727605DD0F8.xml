@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BCB0F1B1-B960-4A96-BB92-4727605DD0F8" name="validaciones_entrada_raanariba" schemaObject="0D590821-16ED-4758-B8D3-96BE4CC9E592">
+  <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+  <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+  <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+  <parsed>true</parsed>
+  <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+    <Column name="validaciones_entrada_id" id="7CF5BCFC-716A-47C0-9012-BC13BC9D3D2C">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <dataTypePrecision>12</dataTypePrecision>
+      <ownDataTypeParameters>,12,</ownDataTypeParameters>
+    </Column>
+    <Column name="cargas_entrada_id" id="A20EF082-6631-4AD1-9554-FC8C1371BA9A">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <dataTypePrecision>12</dataTypePrecision>
+      <ownDataTypeParameters>,12,</ownDataTypeParameters>
+      <associations>
+        <colAssociation fkAssociation="2C953BED-5506-4254-97FB-5CD7F2313EC7" referredColumn="78DF61C8-6A87-45BE-90B3-7EA0C8CD043D" />
+      </associations>
+    </Column>
+    <Column name="numero_fila" id="F4EDC9B1-FC78-4A2F-9023-5470588260D6">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <dataTypePrecision>10</dataTypePrecision>
+      <ownDataTypeParameters>,10,</ownDataTypeParameters>
+    </Column>
+    <Column name="campo" id="87914382-2BE5-426B-BC51-CC9245ECD827">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <dataTypeSize>128 BYTE</dataTypeSize>
+      <ownDataTypeParameters>128 BYTE,,</ownDataTypeParameters>
+    </Column>
+    <Column name="codigo_validacion" id="505F6C82-F4B9-433A-ACC6-D710F79BB459">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <dataTypeSize>50 BYTE</dataTypeSize>
+      <ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+    </Column>
+    <Column name="mensaje_error" id="0B0AF610-D1ED-4AA4-BD82-ECBFB3F28806">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <dataTypeSize>1000 BYTE</dataTypeSize>
+      <ownDataTypeParameters>1000 BYTE,,</ownDataTypeParameters>
+    </Column>
+    <Column name="fecha_validacion" id="384C3873-911A-4412-9F48-0905C7298E7A">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>0</use>
+      <ownDataTypeParameters>,,</ownDataTypeParameters>
+      <comment>Tipo requerido: TIMESTAMP(6) WITH TIME ZONE; pendiente de asignacion nativa porque no existe muestra de este tipo en example.zip.</comment>
+    </Column>
+  </columns>
+  <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+    <ind_PK_UK id="6AB00AF1-425B-44E7-8FB5-E4922FB43E3A" name="validaciones_entrada_pk">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <pk>true</pk>
+      <indexState>Primary Constraint</indexState>
+      <indexColumnUsage>
+        <colUsage columnID="7CF5BCFC-716A-47C0-9012-BC13BC9D3D2C" />
+      </indexColumnUsage>
+    </ind_PK_UK>
+    <ind_PK_UK id="4CA49E02-312C-4053-8E7C-6DF6DA19CD55" name="fk_validaciones_e_1">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <indexState>Foreign Key</indexState>
+      <indexColumnUsage>
+        <colUsage columnID="A20EF082-6631-4AD1-9554-FC8C1371BA9A" />
+      </indexColumnUsage>
+    </ind_PK_UK>
+  </indexes>
+</Table>

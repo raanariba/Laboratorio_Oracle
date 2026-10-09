@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BE73018F-6F61-4737-8D1E-851A5B865D66" name="mallas_asignaturas_raanariba" schemaObject="0D590821-16ED-4758-B8D3-96BE4CC9E592">
+  <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+  <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+  <parsed>true</parsed>
+  <comment>Tabla puente N:M. Una misma asignatura se comparte por varias mallas/carreras, sin duplicar su definicion ni sus unidades valorativas.</comment>
+  <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+    <Column name="mallas_asignaturas_id" id="14839E3B-F0D9-452F-BE4B-FFB79F2BD137">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <nullsAllowed>false</nullsAllowed>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <dataTypePrecision>12</dataTypePrecision>
+      <ownDataTypeParameters>,12,</ownDataTypeParameters>
+    </Column>
+    <Column name="mallas_curriculares_id" id="80C7A23C-7F3E-4ED8-97A6-DED136EFBAAE">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <nullsAllowed>false</nullsAllowed>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <dataTypePrecision>12</dataTypePrecision>
+      <ownDataTypeParameters>,12,</ownDataTypeParameters>
+      <associations>
+        <colAssociation fkAssociation="2CEC01D6-8192-4258-AA00-C710165D934A" referredColumn="C39B463B-D33D-4FE9-B39B-A37E9CFA8E2B" />
+      </associations>
+    </Column>
+    <Column name="asignaturas_id" id="EBD3FDED-06B6-43E1-95CC-7CA17BD69370">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <nullsAllowed>false</nullsAllowed>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <dataTypePrecision>12</dataTypePrecision>
+      <ownDataTypeParameters>,12,</ownDataTypeParameters>
+      <associations>
+        <colAssociation fkAssociation="B1B5C8D8-C612-42ED-BC63-0A7EEB75BECC" referredColumn="0298B6BB-FD8E-4958-BC5C-88F32200C320" />
+      </associations>
+    </Column>
+    <Column name="nivel_sugerido" id="8A914EDB-FB60-4EBF-88C6-17531F79EC8E">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <nullsAllowed>false</nullsAllowed>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <dataTypePrecision>3</dataTypePrecision>
+      <ownDataTypeParameters>,3,</ownDataTypeParameters>
+    </Column>
+    <Column name="tipo_asignatura" id="B66EEE55-8C5B-4B35-BC0E-69C58C5EF339">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <nullsAllowed>false</nullsAllowed>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <dataTypeSize>20 BYTE</dataTypeSize>
+      <ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+    </Column>
+  </columns>
+  <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+    <ind_PK_UK id="DFF0B5ED-BD47-498D-BC69-EE44EFC9F7E5" name="pk_mallas_asignatura_0">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <indexState>Primary Constraint</indexState>
+      <pk>true</pk>
+      <indexColumnUsage>
+        <colUsage columnID="14839E3B-F0D9-452F-BE4B-FFB79F2BD137" />
+      </indexColumnUsage>
+    </ind_PK_UK>
+    <ind_PK_UK id="6901747B-82FB-4F98-954A-BCFB8176506A" name="uk_mallas_asignatura_1">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <indexState>Unique Constraint</indexState>
+      <indexColumnUsage>
+        <colUsage columnID="80C7A23C-7F3E-4ED8-97A6-DED136EFBAAE" />
+        <colUsage columnID="EBD3FDED-06B6-43E1-95CC-7CA17BD69370" />
+      </indexColumnUsage>
+    </ind_PK_UK>
+    <ind_PK_UK id="4308AC2C-D2A1-434E-BF43-4856C23E33C8" name="fk_mallas_asignat_35">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <indexState>Foreign Key</indexState>
+      <indexColumnUsage>
+        <colUsage columnID="80C7A23C-7F3E-4ED8-97A6-DED136EFBAAE" />
+      </indexColumnUsage>
+    </ind_PK_UK>
+    <ind_PK_UK id="03A829AB-AD49-40EA-A38C-0CC5AF380838" name="fk_mallas_asignat_36">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <indexState>Foreign Key</indexState>
+      <indexColumnUsage>
+        <colUsage columnID="EBD3FDED-06B6-43E1-95CC-7CA17BD69370" />
+      </indexColumnUsage>
+    </ind_PK_UK>
+  </indexes>
+</Table>

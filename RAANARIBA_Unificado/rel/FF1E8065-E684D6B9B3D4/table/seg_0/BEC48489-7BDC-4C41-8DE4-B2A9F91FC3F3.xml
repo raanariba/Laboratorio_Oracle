@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BEC48489-7BDC-4C41-8DE4-B2A9F91FC3F3" name="secciones_raanariba" schemaObject="0D590821-16ED-4758-B8D3-96BE4CC9E592">
+  <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+  <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+  <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+  <parsed>true</parsed>
+  <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+    <Column name="secciones_id" id="47F1A6C3-029F-4393-B395-2032EAAAFF34">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <dataTypePrecision>12</dataTypePrecision>
+      <ownDataTypeParameters>,12,</ownDataTypeParameters>
+    </Column>
+    <Column name="asignaturas_id" id="F00CDC3E-BA66-468E-A99D-9EF159743E0B">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <dataTypePrecision>12</dataTypePrecision>
+      <ownDataTypeParameters>,12,</ownDataTypeParameters>
+      <associations>
+        <colAssociation fkAssociation="C4FABBD9-8FC2-495B-AAC6-BDA0B8B960B2" referredColumn="0298B6BB-FD8E-4958-BC5C-88F32200C320" />
+      </associations>
+    </Column>
+    <Column name="periodos_academicos_id" id="23A3B4E9-304B-4B40-80F0-AC6AB06BF527">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <dataTypePrecision>12</dataTypePrecision>
+      <ownDataTypeParameters>,12,</ownDataTypeParameters>
+      <associations>
+        <colAssociation fkAssociation="3222FAA8-BDBC-4C67-BFD1-44E5E235E7FC" referredColumn="390C9AEC-D5ED-4C28-9271-AF05B4DB3F5B" />
+      </associations>
+    </Column>
+    <Column name="aulas_id" id="D3CC10AB-0D40-45C1-A313-398BE46F1BC9">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <dataTypePrecision>12</dataTypePrecision>
+      <ownDataTypeParameters>,12,</ownDataTypeParameters>
+      <associations>
+        <colAssociation fkAssociation="BF0EF2A1-98E9-4F19-A586-C5BA2CB88546" referredColumn="B23AF9CD-869A-457C-B282-3F68A571EDB1" />
+      </associations>
+    </Column>
+    <Column name="numero_seccion" id="F7AC7587-5749-46A2-AFA0-640F284AC60D">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <dataTypeSize>20 BYTE</dataTypeSize>
+      <ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+    </Column>
+    <Column name="cupo_maximo" id="78704E88-C441-4497-87C1-5B78378E8917">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <dataTypePrecision>5</dataTypePrecision>
+      <ownDataTypeParameters>,5,</ownDataTypeParameters>
+    </Column>
+    <Column name="estado" id="A484401D-A139-4C65-B7A7-CA5170D50196">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <dataTypeSize>20 BYTE</dataTypeSize>
+      <ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+    </Column>
+  </columns>
+  <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+    <ind_PK_UK id="27F4750A-DC58-4533-BEB8-BF6EE3B4F027" name="secciones_pk">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <pk>true</pk>
+      <indexState>Primary Constraint</indexState>
+      <indexColumnUsage>
+        <colUsage columnID="47F1A6C3-029F-4393-B395-2032EAAAFF34" />
+      </indexColumnUsage>
+    </ind_PK_UK>
+    <ind_PK_UK id="D39DF03E-627C-42E0-B20B-58D133B4C933" name="secciones_periodo_numero_uk">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <createdTime>2026-10-08 06:50:00 UTC</createdTime>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <indexState>Unique Constraint</indexState>
+      <indexColumnUsage>
+        <colUsage columnID="F00CDC3E-BA66-468E-A99D-9EF159743E0B" />
+        <colUsage columnID="23A3B4E9-304B-4B40-80F0-AC6AB06BF527" />
+        <colUsage columnID="F7AC7587-5749-46A2-AFA0-640F284AC60D" />
+      </indexColumnUsage>
+    </ind_PK_UK>
+    <ind_PK_UK id="1E6C9093-1FBD-496E-8BE8-C46C25CB5796" name="fk_secciones_5">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <indexState>Foreign Key</indexState>
+      <indexColumnUsage>
+        <colUsage columnID="F00CDC3E-BA66-468E-A99D-9EF159743E0B" />
+      </indexColumnUsage>
+    </ind_PK_UK>
+    <ind_PK_UK id="D44A7DFF-E438-4975-BF3F-893952533531" name="fk_secciones_13">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <indexState>Foreign Key</indexState>
+      <indexColumnUsage>
+        <colUsage columnID="23A3B4E9-304B-4B40-80F0-AC6AB06BF527" />
+      </indexColumnUsage>
+    </ind_PK_UK>
+    <ind_PK_UK id="E6A05CEC-6376-4B4F-B0A1-31084C1DE59F" name="fk_secciones_21">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <indexState>Foreign Key</indexState>
+      <indexColumnUsage>
+        <colUsage columnID="D3CC10AB-0D40-45C1-A313-398BE46F1BC9" />
+      </indexColumnUsage>
+    </ind_PK_UK>
+  </indexes>
+</Table>

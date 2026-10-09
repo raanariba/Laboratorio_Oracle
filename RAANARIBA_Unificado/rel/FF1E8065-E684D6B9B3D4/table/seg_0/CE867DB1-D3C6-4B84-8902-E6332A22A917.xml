@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CE867DB1-D3C6-4B84-8902-E6332A22A917" name="reportes_indicadores_raanariba" schemaObject="0D590821-16ED-4758-B8D3-96BE4CC9E592">
+  <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+  <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+  <parsed>true</parsed>
+  <comment>Indicadores incluidos en cada reporte estadistico.</comment>
+  <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+    <Column name="reportes_indicadores_id" id="1E948E73-0525-474D-A655-0534A1577F6E">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <nullsAllowed>false</nullsAllowed>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <dataTypePrecision>12</dataTypePrecision>
+      <ownDataTypeParameters>,12,</ownDataTypeParameters>
+    </Column>
+    <Column name="reportes_definiciones_id" id="DEE5B59A-86E5-4651-8C49-792D187508BB">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <nullsAllowed>false</nullsAllowed>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <dataTypePrecision>12</dataTypePrecision>
+      <ownDataTypeParameters>,12,</ownDataTypeParameters>
+      <associations>
+        <colAssociation fkAssociation="0BBEA79F-2142-4DC3-9205-7D55CC6FB395" referredColumn="796A83B3-A61F-4936-B810-183680BC13DA" />
+      </associations>
+    </Column>
+    <Column name="indicadores_estadisticos_id" id="1CCFD653-864D-4B14-986A-9DBF5B53CD0C">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <nullsAllowed>false</nullsAllowed>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <dataTypePrecision>12</dataTypePrecision>
+      <ownDataTypeParameters>,12,</ownDataTypeParameters>
+      <associations>
+        <colAssociation fkAssociation="BAD809C1-9335-4B7D-A13E-6FD8B6D1E8CB" referredColumn="BAAF0C4B-94B2-4BF9-B91F-50CE47438595" />
+      </associations>
+    </Column>
+    <Column name="orden_presentacion" id="07AC0B02-5AFD-48DC-91E7-0239B1061C24">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <nullsAllowed>false</nullsAllowed>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <dataTypePrecision>4</dataTypePrecision>
+      <ownDataTypeParameters>,4,</ownDataTypeParameters>
+    </Column>
+  </columns>
+  <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+    <ind_PK_UK id="AE6999F6-4771-4218-A2FE-E35F741005EC" name="pk_reportes_indicado_0">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <indexState>Primary Constraint</indexState>
+      <pk>true</pk>
+      <indexColumnUsage>
+        <colUsage columnID="1E948E73-0525-474D-A655-0534A1577F6E" />
+      </indexColumnUsage>
+    </ind_PK_UK>
+    <ind_PK_UK id="3CB166FE-7C43-4FA7-BCF4-03F67D309A64" name="uk_reportes_indicado_1">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <indexState>Unique Constraint</indexState>
+      <indexColumnUsage>
+        <colUsage columnID="DEE5B59A-86E5-4651-8C49-792D187508BB" />
+        <colUsage columnID="1CCFD653-864D-4B14-986A-9DBF5B53CD0C" />
+      </indexColumnUsage>
+    </ind_PK_UK>
+    <ind_PK_UK id="223299DB-DE62-4529-BE42-4DBB647309ED" name="fk_reportes_indic_41">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <indexState>Foreign Key</indexState>
+      <indexColumnUsage>
+        <colUsage columnID="DEE5B59A-86E5-4651-8C49-792D187508BB" />
+      </indexColumnUsage>
+    </ind_PK_UK>
+    <ind_PK_UK id="D708D52A-E658-48A6-84BA-056F08E38AD9" name="fk_reportes_indic_42">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <indexState>Foreign Key</indexState>
+      <indexColumnUsage>
+        <colUsage columnID="1CCFD653-864D-4B14-986A-9DBF5B53CD0C" />
+      </indexColumnUsage>
+    </ind_PK_UK>
+  </indexes>
+</Table>

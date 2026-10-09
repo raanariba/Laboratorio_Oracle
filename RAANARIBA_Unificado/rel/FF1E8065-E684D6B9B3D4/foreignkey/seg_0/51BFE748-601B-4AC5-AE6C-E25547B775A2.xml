@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="51BFE748-601B-4AC5-AE6C-E25547B775A2" containerWithKeyObject="1EA87E67-B1BC-4C66-AF3F-99A77D8C49FE" localFKIndex="3CC56D49-F534-47EA-9E1F-5481687C7334" name="fk_bitacora_opera_11">
+  <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+  <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+  <referredTableLongName>RAANARIBA.sesiones_raanariba</referredTableLongName>
+  <deleteRule>NO ACTION</deleteRule>
+  <referredTableID>97B74D14-E53C-4FF3-B580-DB2A356C9C5A</referredTableID>
+  <keyObject>0C8788FD-AD92-4D07-9C2F-51C5AAFAB0F5</keyObject>
+  <referredKeyID>0C8788FD-AD92-4D07-9C2F-51C5AAFAB0F5</referredKeyID>
+  <mandatory>false</mandatory>
+  <refColNames>sesiones_id</refColNames>
+  <transferable>true</transferable>
+  <rely>false</rely>
+  <columnDependencyConstraintGenerateInDDL>false</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

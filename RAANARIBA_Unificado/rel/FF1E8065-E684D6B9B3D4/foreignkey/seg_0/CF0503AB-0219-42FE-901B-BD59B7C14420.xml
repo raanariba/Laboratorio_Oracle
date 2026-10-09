@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="CF0503AB-0219-42FE-901B-BD59B7C14420" containerWithKeyObject="CD9865EF-F10C-4F03-8B1B-60466ACF0CB6" localFKIndex="19C93B71-83C6-4281-BFD5-317864D05D19" name="fk_roles_permisos_19">
+  <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+  <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+  <referredTableLongName>RAANARIBA.permisos_raanariba</referredTableLongName>
+  <deleteRule>NO ACTION</deleteRule>
+  <referredTableID>68028308-E9FD-4512-85C3-02ABB700325D</referredTableID>
+  <keyObject>13E13006-0AE7-4C44-A86A-E9381688B2FD</keyObject>
+  <referredKeyID>13E13006-0AE7-4C44-A86A-E9381688B2FD</referredKeyID>
+  <mandatory>true</mandatory>
+  <refColNames>permisos_id</refColNames>
+  <transferable>true</transferable>
+  <rely>false</rely>
+  <columnDependencyConstraintGenerateInDDL>false</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

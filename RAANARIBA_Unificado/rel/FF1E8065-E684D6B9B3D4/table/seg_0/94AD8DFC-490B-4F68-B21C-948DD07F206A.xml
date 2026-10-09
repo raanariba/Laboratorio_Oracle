@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="94AD8DFC-490B-4F68-B21C-948DD07F206A" name="alumnos_mallas_raanariba" schemaObject="0D590821-16ED-4758-B8D3-96BE4CC9E592">
+  <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+  <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+  <parsed>true</parsed>
+  <comment>Inscripcion del alumno a un plan. Admite varias carreras o cambios de plan conservando historial.</comment>
+  <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+    <Column name="alumnos_mallas_id" id="B30A34EF-BFF7-47BB-ABFA-A5AC0D5E9C0F">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <nullsAllowed>false</nullsAllowed>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <dataTypePrecision>12</dataTypePrecision>
+      <ownDataTypeParameters>,12,</ownDataTypeParameters>
+    </Column>
+    <Column name="alumnos_id" id="EA5B9D6E-4CE7-4A16-9B77-4014E273D5C5">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <nullsAllowed>false</nullsAllowed>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <dataTypePrecision>12</dataTypePrecision>
+      <ownDataTypeParameters>,12,</ownDataTypeParameters>
+      <associations>
+        <colAssociation fkAssociation="90B02590-D9D6-471C-ABAA-0C934E79CF9F" referredColumn="6B341D62-235A-4B4C-B3D6-E2C7BD66B598" />
+      </associations>
+    </Column>
+    <Column name="mallas_curriculares_id" id="55B0BD12-FDED-492A-8E5A-13054A58B4A1">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <nullsAllowed>false</nullsAllowed>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <dataTypePrecision>12</dataTypePrecision>
+      <ownDataTypeParameters>,12,</ownDataTypeParameters>
+      <associations>
+        <colAssociation fkAssociation="54BA5A5F-1F48-49AF-B1FD-E2C2100795BE" referredColumn="C39B463B-D33D-4FE9-B39B-A37E9CFA8E2B" />
+      </associations>
+    </Column>
+    <Column name="fecha_ingreso" id="9A8991B6-26B2-4D83-89CD-B3B568503C82">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <nullsAllowed>false</nullsAllowed>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT007</logicalDatatype>
+      <ownDataTypeParameters>,,</ownDataTypeParameters>
+    </Column>
+    <Column name="fecha_egreso" id="8A50DAEB-FE8B-4DA2-B46D-1A8B903D4404">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <nullsAllowed>true</nullsAllowed>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT007</logicalDatatype>
+      <ownDataTypeParameters>,,</ownDataTypeParameters>
+    </Column>
+    <Column name="estado" id="A4D7B80E-406B-4D12-8217-8B91592066F8">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <nullsAllowed>false</nullsAllowed>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <dataTypeSize>20 BYTE</dataTypeSize>
+      <ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+    </Column>
+  </columns>
+  <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+    <ind_PK_UK id="7A224072-19DC-430B-9AAD-8BFCB463E8F8" name="pk_alumnos_mallas_0">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <indexState>Primary Constraint</indexState>
+      <pk>true</pk>
+      <indexColumnUsage>
+        <colUsage columnID="B30A34EF-BFF7-47BB-ABFA-A5AC0D5E9C0F" />
+      </indexColumnUsage>
+    </ind_PK_UK>
+    <ind_PK_UK id="AC5BA36F-0920-40F2-8835-0E1749251002" name="uk_alumnos_mallas_1">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <indexState>Unique Constraint</indexState>
+      <indexColumnUsage>
+        <colUsage columnID="EA5B9D6E-4CE7-4A16-9B77-4014E273D5C5" />
+        <colUsage columnID="55B0BD12-FDED-492A-8E5A-13054A58B4A1" />
+      </indexColumnUsage>
+    </ind_PK_UK>
+    <ind_PK_UK id="4019DC44-0DBF-45D9-9A86-8DC12B81AFA4" name="fk_alumnos_mallas_37">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <indexState>Foreign Key</indexState>
+      <indexColumnUsage>
+        <colUsage columnID="EA5B9D6E-4CE7-4A16-9B77-4014E273D5C5" />
+      </indexColumnUsage>
+    </ind_PK_UK>
+    <ind_PK_UK id="86D70F0E-1FFD-46E3-AC05-EE8F3CF29984" name="fk_alumnos_mallas_38">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <indexState>Foreign Key</indexState>
+      <indexColumnUsage>
+        <colUsage columnID="55B0BD12-FDED-492A-8E5A-13054A58B4A1" />
+      </indexColumnUsage>
+    </ind_PK_UK>
+  </indexes>
+</Table>

@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F0291903-883F-470A-B403-CA069A390229" name="mallas_curriculares_raanariba" schemaObject="0D590821-16ED-4758-B8D3-96BE4CC9E592">
+  <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+  <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+  <parsed>true</parsed>
+  <comment>Plan de estudios versionado que pertenece a exactamente una carrera.</comment>
+  <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+    <Column name="mallas_curriculares_id" id="C39B463B-D33D-4FE9-B39B-A37E9CFA8E2B">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <nullsAllowed>false</nullsAllowed>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <dataTypePrecision>12</dataTypePrecision>
+      <ownDataTypeParameters>,12,</ownDataTypeParameters>
+    </Column>
+    <Column name="carreras_id" id="B91C9793-8C3A-4C14-A40A-28D482A8B46A">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <nullsAllowed>false</nullsAllowed>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <dataTypePrecision>12</dataTypePrecision>
+      <ownDataTypeParameters>,12,</ownDataTypeParameters>
+      <associations>
+        <colAssociation fkAssociation="4B06389E-86CF-47F8-9BC8-47124A6D376F" referredColumn="58E603E2-9D4D-4498-B8EE-B1E09CB75BC3" />
+      </associations>
+    </Column>
+    <Column name="codigo_malla" id="CA2037C2-5665-4FFF-BDBA-D9E93A75CBEE">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <nullsAllowed>false</nullsAllowed>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <dataTypeSize>40 BYTE</dataTypeSize>
+      <ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+    </Column>
+    <Column name="version_malla" id="6D398081-9717-4023-AA97-B5D16F7E37EB">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <nullsAllowed>false</nullsAllowed>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <dataTypeSize>30 BYTE</dataTypeSize>
+      <ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+    </Column>
+    <Column name="nombre_malla" id="14D89927-6B19-4C8C-8BA4-48EA3D6BEC1E">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <nullsAllowed>false</nullsAllowed>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <dataTypeSize>200 BYTE</dataTypeSize>
+      <ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+    </Column>
+    <Column name="fecha_inicio_vigencia" id="237ACCE6-823E-4B9B-824E-C795118817D6">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <nullsAllowed>false</nullsAllowed>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT007</logicalDatatype>
+      <ownDataTypeParameters>,,</ownDataTypeParameters>
+    </Column>
+    <Column name="fecha_fin_vigencia" id="6BF15ECA-1979-4F48-A34A-AE9FDE95B126">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <nullsAllowed>true</nullsAllowed>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT007</logicalDatatype>
+      <ownDataTypeParameters>,,</ownDataTypeParameters>
+    </Column>
+    <Column name="estado" id="F678CC5D-4C2C-4E60-8D4C-D70F7218E722">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <nullsAllowed>false</nullsAllowed>
+      <useDomainConstraints>false</useDomainConstraints>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <dataTypeSize>20 BYTE</dataTypeSize>
+      <ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+    </Column>
+  </columns>
+  <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+    <ind_PK_UK id="9E2EA56F-70D3-4C3A-87BF-EF18ED6C37EC" name="pk_mallas_curricular_0">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <indexState>Primary Constraint</indexState>
+      <pk>true</pk>
+      <indexColumnUsage>
+        <colUsage columnID="C39B463B-D33D-4FE9-B39B-A37E9CFA8E2B" />
+      </indexColumnUsage>
+    </ind_PK_UK>
+    <ind_PK_UK id="1DA96238-D61A-4DA8-943A-B3589EBA3EA8" name="uk_mallas_curricular_1">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <indexState>Unique Constraint</indexState>
+      <indexColumnUsage>
+        <colUsage columnID="CA2037C2-5665-4FFF-BDBA-D9E93A75CBEE" />
+      </indexColumnUsage>
+    </ind_PK_UK>
+    <ind_PK_UK id="E4F8DD6A-1A0E-4698-B315-4F4F8298C358" name="uk_mallas_curricular_2">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <indexState>Unique Constraint</indexState>
+      <indexColumnUsage>
+        <colUsage columnID="B91C9793-8C3A-4C14-A40A-28D482A8B46A" />
+        <colUsage columnID="6D398081-9717-4023-AA97-B5D16F7E37EB" />
+      </indexColumnUsage>
+    </ind_PK_UK>
+    <ind_PK_UK id="221D8341-3257-4E8B-A481-9D106218F502" name="fk_mallas_curricu_34">
+      <createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+      <ownerDesignName>RAANARIBA_Unificado</ownerDesignName>
+      <indexState>Foreign Key</indexState>
+      <indexColumnUsage>
+        <colUsage columnID="B91C9793-8C3A-4C14-A40A-28D482A8B46A" />
+      </indexColumnUsage>
+    </ind_PK_UK>
+  </indexes>
+</Table>
