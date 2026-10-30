@@ -1,3 +1,36 @@
+# Laboratorio Oracle — Actividad de Aprendizaje 2
+
+Autor: Ricardo Ariel Anariba Armijo.
+
+Para esta actividad reduje el proyecto académico a las entidades necesarias para el caso de la universidad. Conservé la tabla de personas y los perfiles de alumnos y docentes, como en mi diseño original. Las tablas utilizan el sufijo `_raanariba`.
+
+## Modelo de la actividad 2
+
+El diseño contiene seis entidades: `persona_raanariba`, `alumnos_raanariba`, `docentes_raanariba`, `asignaturas_raanariba`, `secciones_raanariba` y `detalle_matricula_raanariba`.
+
+La tabla de personas guarda el nombre y los datos de contacto. Los perfiles de alumno y docente se relacionan con ella, de modo que una persona puede tener ambos perfiles. En docentes agregué el número de empleado, el título profesional y el departamento.
+
+La relación entre alumnos y secciones se resuelve con `detalle_matricula_raanariba`: cada detalle corresponde a un alumno y una sección, registra el estado de la clase y puede tener una nota final. Los estados son **Aprobada**, **Reprobada** y **Cursando**. La combinación de alumno y sección es única para evitar matrículas duplicadas.
+
+Cada sección pertenece a una asignatura y tiene un docente titular obligatorio. Una asignatura y un docente pueden tener varias secciones. Los identificadores, atributos obligatorios y opcionales y cardinalidades están definidos en el modelo lógico con notación Barker.
+
+En la ventana de Data Modeler, **#** identifica el UID principal. En la exportación del diagrama, **P** representa el identificador primario y **U** un identificador único alternativo. El asterisco indica un atributo obligatorio y la letra **o**, uno opcional.
+
+## Archivos de la actividad 2
+
+| Archivo | Contenido |
+| --- | --- |
+| [RAANARIBA_Actividad2.dmd](RAANARIBA_Actividad2.dmd) y [RAANARIBA_Actividad2/](RAANARIBA_Actividad2/) | Diseño editable para Oracle SQL Developer Data Modeler. Se deben mantener juntos. |
+| [RAANARIBA_Actividad2.svg](RAANARIBA_Actividad2.svg) y [RAANARIBA_Actividad2.png](RAANARIBA_Actividad2.png) | Diagrama lógico completo, exportado desde el modelo. |
+| [RAANARIBA_Actividad2_Captura.png](RAANARIBA_Actividad2_Captura.png) | Captura del modelo lógico en Data Modeler. |
+| [Actividad de Aprendizaje 2 - Ricardo Ariel Anariba.pdf](Actividad%20de%20Aprendizaje%202%20-%20Ricardo%20Ariel%20Anariba.pdf) | Explicación técnica y diagrama de la actividad. |
+
+Para abrirlo, selecciona **Archivo > Abrir** en Data Modeler y abre `RAANARIBA_Actividad2.dmd`. En el explorador del diseño, abre **Modelo Lógico** para ver el diagrama Barker.
+
+## Proyecto general de referencia
+
+El siguiente contenido documenta el modelo de la actividad 1, que conservé como referencia para la adaptación.
+
 # Laboratorio Oracle — Actividad de Aprendizaje 1
 
 Autor: Ricardo Ariel Anariba Armijo.

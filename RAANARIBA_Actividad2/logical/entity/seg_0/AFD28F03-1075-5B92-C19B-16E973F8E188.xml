@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="AFD28F03-1075-5B92-C19B-16E973F8E188" name="alumnos_raanariba">
+<createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+<createdTime>2026-10-30 07:09:55 UTC</createdTime>
+<comment><![CDATA[Perfil academico de un alumno. Su nombre y contacto se consultan en persona.]]></comment>
+<ownerDesignName>RAANARIBA_Actividad2</ownerDesignName>
+<engineerTo>
+<item key="44DFFB57-27AE-B0EE-8EBD-451AC5FBC6CF" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="alumnos_id" id="59A7F6F5-83B4-DDD4-7CE6-428FC894CB78">
+<createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+<createdTime>2026-10-30 07:09:55 UTC</createdTime>
+<ownerDesignName>RAANARIBA_Actividad2</ownerDesignName>
+<engineerTo>
+<item key="44DFFB57-27AE-B0EE-8EBD-451AC5FBC6CF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<ownDataTypeParameters>,12,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="numero_cuenta" id="876AF86B-4A51-D50E-5FB9-C90321511962">
+<createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+<createdTime>2026-10-30 07:09:55 UTC</createdTime>
+<ownerDesignName>RAANARIBA_Actividad2</ownerDesignName>
+<engineerTo>
+<item key="44DFFB57-27AE-B0EE-8EBD-451AC5FBC6CF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_ingreso" id="C04FEB5C-CA98-208C-CCC7-BB346B9CDBCF">
+<createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+<createdTime>2026-10-30 07:09:55 UTC</createdTime>
+<ownerDesignName>RAANARIBA_Actividad2</ownerDesignName>
+<engineerTo>
+<item key="44DFFB57-27AE-B0EE-8EBD-451AC5FBC6CF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="persona_id" id="52947702-CC48-2669-5B87-9C2E1EE9C898">
+<createdBy>ricardo</createdBy>
+<createdTime>2026-10-30 07:09:56 UTC</createdTime>
+<generatorID>C809CA61-144A-FE80-AB19-EBB296B64F50</generatorID>
+<ownerDesignName>RAANARIBA_Actividad2</ownerDesignName>
+<engineerTo>
+<item key="44DFFB57-27AE-B0EE-8EBD-451AC5FBC6CF" value="true"/>
+</engineerTo>
+<referedAttribute>15C527C5-E0F0-4D7E-C4FE-0D3945CDE42B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="58575D42-2AFD-1F5E-A6B8-D6BC37FF1309" name="alumnos_pk">
+<createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+<createdTime>2026-10-30 07:09:55 UTC</createdTime>
+<ownerDesignName>RAANARIBA_Actividad2</ownerDesignName>
+<engineerTo>
+<item key="44DFFB57-27AE-B0EE-8EBD-451AC5FBC6CF" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>59A7F6F5-83B4-DDD4-7CE6-428FC894CB78</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="08AAF6EE-D98F-8347-D85A-EED8855E5571" name="alumnos_cuenta_uk">
+<createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+<createdTime>2026-10-30 07:09:55 UTC</createdTime>
+<ownerDesignName>RAANARIBA_Actividad2</ownerDesignName>
+<engineerTo>
+<item key="44DFFB57-27AE-B0EE-8EBD-451AC5FBC6CF" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>876AF86B-4A51-D50E-5FB9-C90321511962</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

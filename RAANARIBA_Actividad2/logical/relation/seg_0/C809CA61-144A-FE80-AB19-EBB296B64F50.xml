@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="persona_alumno" directorySegmentName="seg_0" id="C809CA61-144A-FE80-AB19-EBB296B64F50">
+<createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+<createdTime>2026-10-30 07:09:56 UTC</createdTime>
+<ownerDesignName>RAANARIBA_Actividad2</ownerDesignName>
+<engineerTo>
+<item key="44DFFB57-27AE-B0EE-8EBD-451AC5FBC6CF" value="true"/>
+</engineerTo>
+<sourcePk>66E2401A-0AFA-788C-EE5A-94C8A5413EC5</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>35EAFB57-1666-71BE-22FD-8BC443BAEB2C</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>AFD28F03-1075-5B92-C19B-16E973F8E188</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

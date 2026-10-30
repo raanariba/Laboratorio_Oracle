@@ -1,0 +1,4 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="main_view" objectID="A8DCFD12-0347-8E82-C341-BE16C4DAE411" name="Actividad 2 - Tablas RAANARIBA" visible="false"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

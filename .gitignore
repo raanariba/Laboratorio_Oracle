@@ -1,0 +1,7 @@
+**/*.localz
+**/*.local
+**/*.git
+**/*.DS_Store
+
+# Data Modeler necesita estos índices para abrir el modelo de la actividad 2.
+!RAANARIBA_Actividad2/**/*.local

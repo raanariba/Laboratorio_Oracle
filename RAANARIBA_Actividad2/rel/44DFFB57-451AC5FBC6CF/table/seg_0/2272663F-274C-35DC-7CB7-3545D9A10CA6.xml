@@ -1,0 +1,109 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2272663F-274C-35DC-7CB7-3545D9A10CA6" name="alumnos_raanariba">
+<createdBy>ricardo</createdBy>
+<createdTime>2026-10-30 07:09:56 UTC</createdTime>
+<comment><![CDATA[Perfil academico de un alumno. Su nombre y contacto se consultan en persona.]]></comment>
+<generatorID>AFD28F03-1075-5B92-C19B-16E973F8E188</generatorID>
+<ownerDesignName>RAANARIBA_Actividad2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="alumnos_id" id="2F35394A-1C6C-886C-0261-63575418DEC4">
+<createdBy>ricardo</createdBy>
+<createdTime>2026-10-30 07:09:56 UTC</createdTime>
+<generatorID>59A7F6F5-83B4-DDD4-7CE6-428FC894CB78</generatorID>
+<ownerDesignName>RAANARIBA_Actividad2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<ownDataTypeParameters>,12,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="numero_cuenta" id="ED207C16-BFED-6084-4076-A858B1255EDB">
+<createdBy>ricardo</createdBy>
+<createdTime>2026-10-30 07:09:56 UTC</createdTime>
+<generatorID>876AF86B-4A51-D50E-5FB9-C90321511962</generatorID>
+<ownerDesignName>RAANARIBA_Actividad2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_ingreso" id="0D3FCE4C-FEEE-C3B1-06A6-0D43D207E547">
+<createdBy>ricardo</createdBy>
+<createdTime>2026-10-30 07:09:56 UTC</createdTime>
+<generatorID>C04FEB5C-CA98-208C-CCC7-BB346B9CDBCF</generatorID>
+<ownerDesignName>RAANARIBA_Actividad2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="persona_id" id="CFD757E7-D8F4-5B87-5186-E59BA8FC0BD5">
+<createdBy>ricardo</createdBy>
+<createdTime>2026-10-30 07:09:56 UTC</createdTime>
+<ownerDesignName>RAANARIBA_Actividad2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3C42A311-6DB6-645E-BC86-B2A9DD76109A" referredColumn="6CBA9F56-111B-FF04-FBED-2E98F6E166A7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0B82109E-72DF-D480-4F16-20E48D9243A1" name="alumnos_raanariba_PK">
+<createdBy>ricardo</createdBy>
+<createdTime>2026-10-30 07:09:56 UTC</createdTime>
+<generatorID>58575D42-2AFD-1F5E-A6B8-D6BC37FF1309</generatorID>
+<ownerDesignName>RAANARIBA_Actividad2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2F35394A-1C6C-886C-0261-63575418DEC4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DA588CCE-BB90-A6A3-5D72-80C2EA8F8C58" name="alumnos_raanariba_numero_cuenta_UN">
+<createdBy>ricardo</createdBy>
+<createdTime>2026-10-30 07:09:56 UTC</createdTime>
+<generatorID>08AAF6EE-D98F-8347-D85A-EED8855E5571</generatorID>
+<ownerDesignName>RAANARIBA_Actividad2</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ED207C16-BFED-6084-4076-A858B1255EDB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="47E7655A-8570-3CD7-3FDD-0AA3F15B5209" name="alumnos_persona_uk">
+<createdBy>ricardo</createdBy>
+<createdTime>2026-10-30 07:09:56 UTC</createdTime>
+<ownerDesignName>RAANARIBA_Actividad2</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CFD757E7-D8F4-5B87-5186-E59BA8FC0BD5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E9C15042-6B7E-645A-BEE8-D2D0BC976951" name="alumnos_persona_fk">
+<createdBy>ricardo</createdBy>
+<createdTime>2026-10-30 07:09:56 UTC</createdTime>
+<generatorID>C809CA61-144A-FE80-AB19-EBB296B64F50</generatorID>
+<ownerDesignName>RAANARIBA_Actividad2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CFD757E7-D8F4-5B87-5186-E59BA8FC0BD5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

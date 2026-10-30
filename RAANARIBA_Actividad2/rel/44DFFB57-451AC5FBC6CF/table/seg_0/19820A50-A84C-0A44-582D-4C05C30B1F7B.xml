@@ -1,0 +1,127 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="19820A50-A84C-0A44-582D-4C05C30B1F7B" name="secciones_raanariba">
+<createdBy>ricardo</createdBy>
+<createdTime>2026-10-30 07:09:56 UTC</createdTime>
+<comment><![CDATA[Cada seccion corresponde a una asignatura y tiene un docente titular obligatorio.]]></comment>
+<generatorID>8E717762-115F-64D6-CE5A-97F71080F310</generatorID>
+<ownerDesignName>RAANARIBA_Actividad2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="secciones_id" id="414DBCFF-DAC3-245F-9594-D4FC3B7E87A6">
+<createdBy>ricardo</createdBy>
+<createdTime>2026-10-30 07:09:56 UTC</createdTime>
+<generatorID>AF54B4C1-0077-0F39-7E5C-8FBC94C88C53</generatorID>
+<ownerDesignName>RAANARIBA_Actividad2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<ownDataTypeParameters>,12,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="numero_seccion" id="CA1CF0A9-A093-7D6E-5F2A-77A9F2AB6794">
+<createdBy>ricardo</createdBy>
+<createdTime>2026-10-30 07:09:56 UTC</createdTime>
+<generatorID>AA887AC4-1C4A-B0D5-C937-F8A918A4C770</generatorID>
+<ownerDesignName>RAANARIBA_Actividad2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="aula" id="CC7066FC-2C1C-F56F-1CA5-70B00B566ED1">
+<createdBy>ricardo</createdBy>
+<createdTime>2026-10-30 07:09:56 UTC</createdTime>
+<generatorID>30771A7D-9B87-EBD4-2712-008902BD8B10</generatorID>
+<ownerDesignName>RAANARIBA_Actividad2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="horario" id="67915D12-4C5B-7F0E-E929-A14CBB8344BA">
+<createdBy>ricardo</createdBy>
+<createdTime>2026-10-30 07:09:56 UTC</createdTime>
+<generatorID>45E4D137-0449-1F34-D004-C75BF1A57AA9</generatorID>
+<ownerDesignName>RAANARIBA_Actividad2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="asignaturas_id" id="DD8BDCC6-B9A4-90EB-71B0-20641FFD07D7">
+<createdBy>ricardo</createdBy>
+<createdTime>2026-10-30 07:09:56 UTC</createdTime>
+<ownerDesignName>RAANARIBA_Actividad2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="54EC2B7F-5ECF-B14F-5C56-1D40E269FBAF" referredColumn="178CC3C8-FB7E-A369-82EB-D00FD4EBA11F"/>
+</associations>
+</Column>
+<Column name="docentes_id" id="F2B59550-2744-0ABD-D279-CDAC3ED673E9">
+<createdBy>ricardo</createdBy>
+<createdTime>2026-10-30 07:09:56 UTC</createdTime>
+<ownerDesignName>RAANARIBA_Actividad2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8025C08E-E983-1F24-48EC-B5E10394E8AC" referredColumn="01B19CA8-1255-8A2F-89EB-A7FC179E19E5"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1C0772D0-C3CB-0C49-6FEE-B4B03901F5A6" name="secciones_raanariba_PK">
+<createdBy>ricardo</createdBy>
+<createdTime>2026-10-30 07:09:56 UTC</createdTime>
+<generatorID>6852934C-D087-D579-F797-B4C95469B272</generatorID>
+<ownerDesignName>RAANARIBA_Actividad2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="414DBCFF-DAC3-245F-9594-D4FC3B7E87A6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="58960C16-7982-1E94-9A96-5ACE7D07D8BD" name="secciones_asignatura_fk">
+<createdBy>ricardo</createdBy>
+<createdTime>2026-10-30 07:09:56 UTC</createdTime>
+<generatorID>FB751E0D-5983-F459-EF85-1D05926E5CEC</generatorID>
+<ownerDesignName>RAANARIBA_Actividad2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DD8BDCC6-B9A4-90EB-71B0-20641FFD07D7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="317FFE49-D4CF-B078-8F20-6AD7F6D63208" name="secciones_docente_fk">
+<createdBy>ricardo</createdBy>
+<createdTime>2026-10-30 07:09:56 UTC</createdTime>
+<generatorID>3C367C29-A843-DB15-C32F-1EAF1BDD1AEC</generatorID>
+<ownerDesignName>RAANARIBA_Actividad2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F2B59550-2744-0ABD-D279-CDAC3ED673E9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

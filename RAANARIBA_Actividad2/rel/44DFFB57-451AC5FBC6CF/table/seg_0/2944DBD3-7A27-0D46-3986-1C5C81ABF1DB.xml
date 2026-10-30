@@ -1,0 +1,136 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2944DBD3-7A27-0D46-3986-1C5C81ABF1DB" name="detalle_matricula_raanariba">
+<createdBy>ricardo</createdBy>
+<createdTime>2026-10-30 07:09:56 UTC</createdTime>
+<comment><![CDATA[Registro de un alumno en una seccion, con su estado y nota final.]]></comment>
+<generatorID>C51A8F62-0316-CB49-6952-ED1DCD158EA5</generatorID>
+<ownerDesignName>RAANARIBA_Actividad2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="matriculas_id" id="1655D782-D951-6B62-932B-344DB8714C63">
+<createdBy>ricardo</createdBy>
+<createdTime>2026-10-30 07:09:56 UTC</createdTime>
+<generatorID>086FCA94-01A8-CC15-45B4-BC69C959A0E2</generatorID>
+<ownerDesignName>RAANARIBA_Actividad2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<ownDataTypeParameters>,12,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nota_final" id="3A0361A0-25BA-53C2-8924-AAED9F37B007">
+<createdBy>ricardo</createdBy>
+<createdTime>2026-10-30 07:09:56 UTC</createdTime>
+<comment><![CDATA[Opcional mientras se cursa la clase.]]></comment>
+<generatorID>7E6E46FF-957C-34FF-7B98-3C885FC51C9A</generatorID>
+<ownerDesignName>RAANARIBA_Actividad2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="estado_matricula" id="0BED59F6-5B01-0863-B262-41B00AAFA3B1">
+<createdBy>ricardo</createdBy>
+<createdTime>2026-10-30 07:09:56 UTC</createdTime>
+<comment><![CDATA[Estado de la clase: Aprobada, Reprobada o Cursando.]]></comment>
+<generatorID>64DCC447-0431-3202-2A21-19C40D529093</generatorID>
+<ownerDesignName>RAANARIBA_Actividad2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<listOfValues>
+<valueDef value="Aprobada" description=""/>
+<valueDef value="Cursando" description=""/>
+<valueDef value="Reprobada" description=""/>
+</listOfValues>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="alumnos_id" id="39D40474-BC98-79D1-E384-0E667E4019A7">
+<createdBy>ricardo</createdBy>
+<createdTime>2026-10-30 07:09:56 UTC</createdTime>
+<ownerDesignName>RAANARIBA_Actividad2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AFF46415-3D61-AAE4-A75C-6CC0FC79945B" referredColumn="2F35394A-1C6C-886C-0261-63575418DEC4"/>
+</associations>
+</Column>
+<Column name="secciones_id" id="74A5C16F-AEF4-721E-85E6-96ED49991CAF">
+<createdBy>ricardo</createdBy>
+<createdTime>2026-10-30 07:09:56 UTC</createdTime>
+<ownerDesignName>RAANARIBA_Actividad2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3BEF4108-80BD-6B6F-D684-8BE17D4AF847" referredColumn="414DBCFF-DAC3-245F-9594-D4FC3B7E87A6"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="257F18AC-80B4-3CDA-53A2-EC1D0505B313" name="detalle_matricula_raanariba_PK">
+<createdBy>ricardo</createdBy>
+<createdTime>2026-10-30 07:09:56 UTC</createdTime>
+<generatorID>E20B9A14-3601-AED6-7F4D-2DAC8422A37F</generatorID>
+<ownerDesignName>RAANARIBA_Actividad2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1655D782-D951-6B62-932B-344DB8714C63"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8DFF4E76-3A44-A8D7-F005-1774F51B5326" name="detalle_alumno_seccion_uk">
+<createdBy>ricardo</createdBy>
+<createdTime>2026-10-30 07:09:56 UTC</createdTime>
+<generatorID>AADE575A-6C48-8D0C-F4EE-DBF3BCDACF8E</generatorID>
+<ownerDesignName>RAANARIBA_Actividad2</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="39D40474-BC98-79D1-E384-0E667E4019A7"/>
+<colUsage columnID="74A5C16F-AEF4-721E-85E6-96ED49991CAF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="20D14523-7720-C798-2F7D-3738054C431B" name="detalle_alumno_fk">
+<createdBy>ricardo</createdBy>
+<createdTime>2026-10-30 07:09:56 UTC</createdTime>
+<generatorID>7AFF012B-8990-F403-EC4F-C818A7FB9F64</generatorID>
+<ownerDesignName>RAANARIBA_Actividad2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="39D40474-BC98-79D1-E384-0E667E4019A7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D06E4E2B-8117-B2CD-9369-C3576710C6D4" name="detalle_seccion_fk">
+<createdBy>ricardo</createdBy>
+<createdTime>2026-10-30 07:09:56 UTC</createdTime>
+<generatorID>DE32E2DF-A930-DBCD-3B1F-1909DEB0EF1D</generatorID>
+<ownerDesignName>RAANARIBA_Actividad2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="74A5C16F-AEF4-721E-85E6-96ED49991CAF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

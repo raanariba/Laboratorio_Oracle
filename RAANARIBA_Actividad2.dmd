@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="RAANARIBA_Actividad2" id="926B7224-A550-DF15-D858-02F0E3CC48E5" version="3.5">
+<createdBy>Ricardo Ariel Anariba Armijo</createdBy>
+<createdTime>2026-10-30 07:09:55 UTC</createdTime>
+<ownerDesignName>RAANARIBA_Actividad2</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>926B7224-A550-DF15-D858-02F0E3CC48E5</designId>
+</OSDM_Design>

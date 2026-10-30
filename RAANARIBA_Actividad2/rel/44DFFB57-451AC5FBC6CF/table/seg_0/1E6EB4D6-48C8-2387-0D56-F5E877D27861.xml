@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1E6EB4D6-48C8-2387-0D56-F5E877D27861" name="asignaturas_raanariba">
+<createdBy>ricardo</createdBy>
+<createdTime>2026-10-30 07:09:56 UTC</createdTime>
+<comment><![CDATA[Asignaturas que se imparten mediante secciones academicas.]]></comment>
+<generatorID>737F056E-A2B5-51A2-9CBC-DDC46E042772</generatorID>
+<ownerDesignName>RAANARIBA_Actividad2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="asignaturas_id" id="178CC3C8-FB7E-A369-82EB-D00FD4EBA11F">
+<createdBy>ricardo</createdBy>
+<createdTime>2026-10-30 07:09:56 UTC</createdTime>
+<generatorID>CB35BF7C-F2E7-F90D-8D10-8FE27376F64F</generatorID>
+<ownerDesignName>RAANARIBA_Actividad2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<ownDataTypeParameters>,12,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="codigo_asignatura" id="5801093D-A8F2-4BAC-46D5-7FC773F4AE62">
+<createdBy>ricardo</createdBy>
+<createdTime>2026-10-30 07:09:56 UTC</createdTime>
+<generatorID>966C2ACA-6B73-2890-52EA-58088C5BB41E</generatorID>
+<ownerDesignName>RAANARIBA_Actividad2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre_asignatura" id="66BC935C-4777-F86E-3B7C-188C84BAFA07">
+<createdBy>ricardo</createdBy>
+<createdTime>2026-10-30 07:09:56 UTC</createdTime>
+<generatorID>1781B1BB-1357-9A04-41CA-90865DD965FD</generatorID>
+<ownerDesignName>RAANARIBA_Actividad2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150 BYTE</dataTypeSize>
+<ownDataTypeParameters>150 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="unidades_valorativas" id="8229CCA7-6896-F4EC-E909-6DD43DF15FF1">
+<createdBy>ricardo</createdBy>
+<createdTime>2026-10-30 07:09:56 UTC</createdTime>
+<generatorID>F5800A5B-C520-CF6D-7F43-E54F0FE1711D</generatorID>
+<ownerDesignName>RAANARIBA_Actividad2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>1</dataTypeScale>
+<ownDataTypeParameters>,4,1</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AC9FB1E3-B883-D831-0B6A-F09A183B2D47" name="asignaturas_raanariba_PK">
+<createdBy>ricardo</createdBy>
+<createdTime>2026-10-30 07:09:56 UTC</createdTime>
+<generatorID>D28B41E5-E79D-E4A5-F073-1CE9B0CA5ACE</generatorID>
+<ownerDesignName>RAANARIBA_Actividad2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="178CC3C8-FB7E-A369-82EB-D00FD4EBA11F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A888907F-4DC9-A9A0-5D7E-C6359127CD91" name="asignaturas_raanariba_codigo_asignatura_UN">
+<createdBy>ricardo</createdBy>
+<createdTime>2026-10-30 07:09:56 UTC</createdTime>
+<generatorID>539CFCCE-FF7C-9C6F-EF6D-6E7C8A08B48D</generatorID>
+<ownerDesignName>RAANARIBA_Actividad2</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5801093D-A8F2-4BAC-46D5-7FC773F4AE62"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
